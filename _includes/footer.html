@@ -1,0 +1,64 @@
+<footer>
+  <div class="container">
+    <div class="row custom-address">
+      <div class="col-md-4">
+        {% assign ftr = (site.bloky | where: "blok" , "päta") %}
+        {{ ftr }}
+      </div>
+      <div class="col-md-2">
+        {% comment %} Main menu {% endcomment %}
+        <ul class="nav-stacked">
+        {% assign pages = site.pages | sort: "order" | where: "group" , "subpage" %}
+        {% for i in pages %}
+          {% unless i.published == false %}
+            {% if i.sitemap.exclude != "yes" %}
+              {% if page.url == i.url %}
+                <li class="active">
+                  <a class="pgl active" href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+                </li>
+                {% else %}
+                <li>
+                  <a class="pgl" href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-2">
+        {% comment %} Social links {% endcomment %}
+        <ul class="social">
+          {% if site.social-links.facebook %}
+          <li class="facebook">
+            <a target="_blank" href="https://www.facebook.com/{{ site.social-links.facebook }}">
+				<span class="icon-facebook"></span>
+            <span class="hidden">Facebook</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.social-links.googleplus %}
+          <li class="googleplus">
+            <a target="_blank" href="https://plus.google.com/{{ site.social-links.googleplus }}">
+            <span class="icon-googleplus"></span>
+            <span class="hidden">Google+</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.social-links.twitter %}
+          <li class="twitter">
+            <a target="_blank" href="https://www.twitter.com/{{ site.social-links.twitter }}">
+            <span class="icon-twitter"></span>
+            <span class="hidden">Twitter</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  {% comment %} Copyright {% endcomment %}
+    {% if site.title %}
+    <p class="copyright text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    {% endif %}
+  </div>
+</footer>

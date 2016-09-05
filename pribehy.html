@@ -1,0 +1,32 @@
+---
+title: Príbehy
+subtitle: Príbehy žiakov a študentov v núdzi.
+description: Príbehy žiakov a študentov v núdzi.
+permalink: /pribehy/
+layout: default
+itemtype: pribehy
+group: subpage
+order: 4
+---
+<div tabindex="-1" class="custom-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+  </div>
+</div>
+<div class="container custom-container">
+  {% for i in site.pribehy %}
+  {% unless i.published == false %}
+  <div class="row">
+    <div class="col-md-9">
+      <div class="custom-section">
+        <img alt="{{ i.title }}" class="img-circle" src="{{ site.baseurl }}/img/{{ i.image }}" />
+        <h2>{{ i.title }}</h2>
+        <p class="lead">{{ i.description }}</p>
+        <p>{{ i.content  | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+  {% endunless %}
+  {% endfor %}
+</div>

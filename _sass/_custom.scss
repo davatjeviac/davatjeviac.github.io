@@ -1,0 +1,403 @@
+/**
+ * Custom styles
+ */
+ 
+footer {
+  color: $headings-color;
+  //margin-top: 100px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+  
+  @media (min-width: $screen-md-min) {
+    text-align: left;
+  }
+}
+
+.custom-address{
+    margin-bottom: 20px;
+}
+
+.social {
+    float: none;
+    text-align: center;
+  margin: 20px 0 10px;
+  
+  > li {
+    width: 30px;
+    height: 30px;
+    float: none;
+    display: inline;
+	margin-right: 6px;
+  }
+  > li > a {
+      //padding: 10px 5px;
+    padding: 0;
+    display: inline-block;
+  }
+  > li > a > img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media (min-width: $screen-md-min) {
+    float: left;
+    text-align: left;
+    margin: 0;
+  }
+
+}
+
+
+// Home page
+
+.custom-masthead {
+    padding: 80px 0 40px;
+  text-align: center;
+}
+
+.custom-masthead .lead {
+    font-size: 30px;
+    font-weight: inherit;
+    max-width: 13em;
+    text-shadow: 0 0 2px $body-bg;
+  //width: 80%;
+  margin: 0 auto 30px;
+}
+
+
+.custom-header {
+    font-size: 24px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    text-align: left;
+}
+.custom-header {
+    font-size: 20px;
+  padding: 30px 0;
+    margin-bottom: 40px;
+}
+.custom-header, .custom-masthead {
+    background-image:url("/img/davat-je-viac-ilustracia-siroka.svg");
+    background-size: 100% auto;
+    color: $brand-primary;
+    position: relative;
+}
+
+
+
+.custom-header h1, .custom-header p {
+    //margin-right: 380px;
+  //margin-bottom: 40px;
+  max-width: 20em;
+}
+.custom-header h1 {
+    line-height: 1;
+    color: $brand-primary;
+    margin-top: 30px;
+  
+  @media (min-width: $screen-sm-min) {
+    font-size: 60px;
+  }
+}
+
+
+
+.custom-header p {
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+
+.ako-pomoct {
+  background-image:url("/img/davat-je-viac-chcem-pomoct.svg");
+  background-size: 100% 100%;
+    font-size: 18px;
+    line-height: 1.33333;
+    padding: 18px 21px;
+  font-weight: inherit;
+  text-decoration: none;
+  text-shadow: none;
+  
+  
+  
+    -moz-user-select: none;
+
+    cursor: pointer;
+    display: inline-block;
+
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+  
+  border: medium none;
+  
+    //-webkit-transition-duration: 0.4s; /* Safari */
+    //transition-duration: 0.4s;
+  
+  color: $brand-primary;
+}
+.ako-pomoct:hover {
+  text-decoration: none;
+  
+    //background-color: #4CAF50; /* Green */
+    //color: #F8C114;
+  
+  background-image:url("/img/davat-je-viac-chcem-pomoct-hover.svg");
+  color: $brand-primary;
+  
+}
+
+button.ako-pomoct {
+    background-color: $body-bg;
+  padding: 28px 21px;
+}
+
+
+.custom-featurette {
+    //border-bottom: 1px solid $body-bg-dark;
+    color: $text-color;
+    font-size: 16px;
+    line-height: 1.5;
+    //padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.custom-featurette h3 {
+    color: $text-color;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.custom-featurette-title {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.custom-featurette .img-responsive {
+    margin-top: 0;
+  width: 100px;
+}
+
+.half-rule {
+    margin: 60px auto;
+    width: 100px;
+	
+}
+
+.custom-num-lg {
+    font-size: 108px;
+  font-weight: 300;
+    height: 144px;
+    line-height: 140px;
+    width: 144px;
+  color: $headings-color;
+}
+
+.custom-section {
+    margin-bottom: 60px;
+}
+
+.vertical-indent{
+  margin-bottom: 60px;
+}
+
+
+
+
+
+.snv {
+  float: right;
+
+  z-index: 1001;
+  
+  .trigger {
+    overflow: hidden;
+  }
+  
+  .mic {
+    display: none;
+  }
+
+  .pgl {
+    /*color: $brand-primary;*/
+    //line-height: $base-line-height;
+    
+    /*Add padding to your links. This way, the user doesn’t have to hover over the exact point of the text. Instead, they can hover in proximity and still be able to click.*/
+    padding: 1.25em 0.5em;
+    
+    
+    display: block;
+    float: left;
+
+    // Gaps between nav items, but not on the first one
+    /*
+    &:not(:first-child) {
+      margin-left: round(($spacing-unit / 1.5) - ($spacing-unit / 5));
+    }
+    */
+    
+    /*
+    Keep link appearance the same
+    */
+    /*
+    &,
+    &:link,
+    &:visited,
+    &:hover {
+      color: $brand-primary;
+    }
+    */
+    
+    &:visited {
+      color: $brand-primary;
+    }
+    
+    &:hover,
+    &:focus {
+      color: $brand-primary-dark;
+    }
+    
+    -moz-user-select: none;
+    
+    text-decoration: none;
+  }
+  
+  .pgl.active{
+    color: $brand-primary-dark;
+  }
+  
+
+  @include media-query($container-sm) {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    
+    background-color: $body-bg;
+    border: 1px solid $body-bg-dark;
+    
+    border-radius: 5px;
+    text-align: right;
+    
+    /*margin-top: 0;*/
+    /*margin-right: 0;*/
+
+
+    .mic {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 34px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg {
+        width: 18px;
+        height: 15px;
+
+        path {
+          fill: $gray-dark;
+        }
+      }
+    }
+
+    .trigger {
+      clear: both;
+      display: none;
+    }
+
+    &:hover .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .pgl {
+      padding: 0.5em;
+      display: block;
+      float: none;
+    }
+
+  }
+  
+}
+
+
+.alert {
+    line-height: 2em;
+    padding: 3px;
+}
+
+
+.download-link{
+	img {
+		margin: -6px 2px 0 0;
+	}
+}
+
+.xxread-more {
+	
+}
+
+.profile.custom-section {
+    margin-bottom: 100px;
+	
+    @media (min-width: $screen-lg-min) {
+		h2 {
+			margin-top: 50px;
+		}
+    }
+	
+
+}
+
+
+
+
+
+.icon-download:before {
+  content: "\e901";
+}
+.icon-euro:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-googleplus:before {
+  content: "\e904";
+}
+.icon-read-less:before {
+  content: "\e905";
+}
+.icon-read-more:before {
+  content: "\e906";
+}
+.icon-twitter:before {
+  content: "\e907";
+}
+.icon-viac:before {
+  content: "\e908";
+}
+.icon-ziak:before {
+  content: "\e909";
+}
+
+.icon-euro, .icon-viac, .icon-ziak{
+	font-size: 100px;
+	color: $headings-color;
+}
+
+.icon-facebook, .icon-googleplus, .icon-twitter {
+	font-size: 30px;
+}
+
+.icon-download {
+	font-size: 24px;
+	vertical-align: sub;
+}
+

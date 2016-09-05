@@ -1,0 +1,72 @@
+---
+layout: compress
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  {% comment %}
+    Loop through posts
+  {% endcomment %}
+
+  {% for post in site.posts %}
+    {% unless i.published == false %}
+    <url>
+      <loc>{{ site.url }}{{ i.url }}</loc>
+      {% if i.sitemap.lastmod %}
+        <lastmod>{{ i.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+      {% elsif i.date %}
+        <lastmod>{{ i.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if i.sitemap.changefreq %}
+        <changefreq>{{ i.sitemap.changefreq }}</changefreq>
+      {% else %}
+        <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if i.sitemap.priority %}
+        <priority>{{ i.sitemap.priority }}</priority>
+      {% else %}
+        <priority>0.5</priority>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
+
+
+  {% comment %}
+    Loop through podstranky
+  {% endcomment %}
+
+  {% for i in site.pages %}
+    {% unless i.published == false %}
+      {% if i.sitemap.exclude != "yes" %}
+        {% if i.group == "subpage" or i.group == "index" %}
+
+          <url>
+            <loc>{{ site.url }}{{ i.url }}</loc>
+            {% if i.sitemap.lastmod %}
+              <lastmod>{{ i.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+            {% elsif i.date %}
+              <lastmod>{{ i.date | date_to_xmlschema }}</lastmod>
+            {% else %}
+              <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+            {% endif %}
+            {% if i.sitemap.changefreq %}
+              <changefreq>{{ i.sitemap.changefreq }}</changefreq>
+            {% else %}
+              <changefreq>monthly</changefreq>
+            {% endif %}
+            {% if i.sitemap.priority %}
+              <priority>{{ i.sitemap.priority }}</priority>
+            {% else %}
+              <priority>0.5</priority>
+            {% endif %}
+          </url>
+
+        {% endif %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+
+</urlset>

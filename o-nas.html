@@ -1,0 +1,53 @@
+---
+title: O nás
+subtitle: Sme občianske združenie. Pomáhame žiakom a študentom v núdzi.
+description: Sme občianske združenie. Pomáhame žiakom a študentom v núdzi.
+permalink: /o-nas/
+layout: default
+itemtype: about
+group: subpage
+order: 1
+---
+<div tabindex="-1" class="custom-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+  </div>
+</div>
+<div class="container custom-container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="custom-section">
+        <h1 class="page-header">História</h1>
+        <p class="lead">Občianske združenie Dávať je viac vzniklo v roku 2016 v Spišskej Novej Vsi.</p>
+        <p>Občianske združenie Dávať je viac vzniklo v roku 2016 v Spišskej Novej Vsi. Pomáha žiakom a študentom v núdzi.</p>
+      </div>
+      <div class="custom-section">
+        <h1 class="page-header">Poslanie</h1>
+        <p class="lead">Prispieť osobnostnému a profesijnému rastu detí zo sociálne a ekonomicky znevýhodnených skupín.</p>
+        <p>Poslaním občianskeho združenia je vyhľadávať pre deti zo sociálne a ekonomicky znevýhodnených skupín obyvateľstva študujúcich na základných a stredných školách darcov, ktorí chcú individuálne podporiť ich ďalšie vzdelávanie, a tak prispieť k ich osobnostnému a profesijnému rastu.</p>
+      </div>
+      <div class="custom-section">
+        <h1 class="page-header">Ciele a činnosti združenia</h1>
+        <p class="lead">Podpora ekonomicky a sociálne hendikepovaných žiakov.</p>
+        <p>Cieľom združenia je podpora ekonomicky a sociálne hendikepovaných žiakov na základnej a/alebo strednej škole s cieľom materiálne podporiť ich štúdium a pripraviť ich na ďalšie štúdium na strednej a/alebo vysokej škole.</p>
+      </div>
+      <div class="custom-section">
+        <h1 class="page-header">Tím</h1>
+        <p class="lead">Tím Občianskeho združenia Dávať je viac tvoria ľudia, ktorím záleží na vzdelávaní detí zo sociálne a ekonomicky znevýhodnených skupín.</p>
+      </div>
+    </div>
+  </div>
+  {% include collection.include collection='dobrovolnici' %}
+  <div class="row">
+    <div class="col-md-9">
+      <div class="custom-section">
+        <h1 class="page-header">Stanovy</h1>
+        <a class="download-link" href="{{ site.url | replace:"index.html","" | prepend: site.baseurl }}/download/davat-je-viac-stanovy.pdf" download="davat-je-viac-stanovy.pdf">
+			<span class="icon-download"></span>
+			<span>Stanovy občianskeho združenia</span>
+		</a>
+      </div>
+    </div>
+  </div>
+</div>

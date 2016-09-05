@@ -1,0 +1,8 @@
+_site
+.sass-cache
+node_modules
+Thumbs.db
+.DS_Store
+!.gitkeep
+jekyll-serve.app
+all.html

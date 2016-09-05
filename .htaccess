@@ -1,0 +1,355 @@
+#
+# Apache/PHP/Jekyll settings
+# from Drupal .htaccess
+#
+
+# Protect files and directories from prying eyes.
+<FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl)(~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\..*|Entries.*|Repository|Root|Tag|Template)$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig\.save)$">
+  Order allow,deny
+</FilesMatch>
+
+# Don't show directory listings for URLs which map to a directory.
+#Options -Indexes
+
+# Follow symbolic links in this directory.
+#Options +FollowSymLinks
+
+# Make Drupal handle any 404 errors.
+ErrorDocument 404 /index.php
+
+# Set the default handler.
+DirectoryIndex index.php index.html index.htm
+
+
+
+# 20140625 PM
+# Deny files and directories which appeared in admin/reports/dblog
+
+# Protect multiple files
+# http://www.domain.com/wp-login.php
+<FilesMatch "(wp-login.php|Register.aspx|join.php|register.php|signup.php|login.php|CreateUser.asp|join_form.php|post.php|index_do.php|ucp.php|profile.php|registration_rules.asp|bokeindex.asp|reg.asp|logging.php|reg.php|quicklogin.one|modules.php)">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Protect multiple directories
+# e.g. http://www.domain.com/member/whatever
+<FilesMatch "^(member|site|signup|forum|forums|FCKeditor|account|tools|filter)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Deny certain urls
+# e.g. http://www.domain.com/whatever/signup
+<IfModule mod_alias.c>
+  RedirectMatch 403 register
+  RedirectMatch 403 signup
+  RedirectMatch 403 FCKeditor
+  RedirectMatch 403 forum
+  RedirectMatch 403 forums
+  RedirectMatch 403 wp-login
+  RedirectMatch 403 wp-content
+  RedirectMatch 403 wp-trackback
+  RedirectMatch 403 bitrix
+  #RedirectMatch 403 \(
+  #RedirectMatch 403 \)
+  RedirectMatch 403 \`
+  RedirectMatch 403 administrator
+</IfModule>
+# End of Deny files and directories which appeared in admin/reports/dblog
+
+# 20130705
+# 5G BLACKLIST/FIREWALL (2013)
+# @ http://perishablepress.com/5g-blacklist-2013/
+
+# 5G:[QUERY STRINGS]
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	#RewriteBase /
+	RewriteCond %{QUERY_STRING} (\"|%22).*(<|>|%3) [NC,OR]
+	RewriteCond %{QUERY_STRING} (javascript:).*(\;) [NC,OR]
+	RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3) [NC,OR]
+	RewriteCond %{QUERY_STRING} (\\|\.\./|`|=\'$|=%27$) [NC,OR]
+	RewriteCond %{QUERY_STRING} (\;|\'|\"|%22).*(union|select|insert|drop|update|md5|benchmark|or|and|if) [NC,OR]
+	RewriteCond %{QUERY_STRING} (base64_encode|localhost|mosconfig) [NC,OR]
+	RewriteCond %{QUERY_STRING} (boot\.ini|echo.*kae|etc/passwd) [NC,OR]
+	RewriteCond %{QUERY_STRING} (GLOBALS|REQUEST)(=|\[|%) [NC]
+	RewriteRule .* - [F]
+</IfModule>
+
+# 5G:[USER AGENTS]
+<IfModule mod_setenvif.c>
+	# SetEnvIfNoCase User-Agent ^$ keep_out
+	SetEnvIfNoCase User-Agent (binlar|casper|cmsworldmap|comodo|diavol|dotbot|feedfinder|flicky|ia_archiver|jakarta|kmccrew|nutch|planetwork|purebot|pycurl|skygrid|sucker|turnit|vikspider|zmeu) keep_out
+	<limit GET POST PUT>
+		Order Allow,Deny
+		Allow from all
+		Deny from env=keep_out
+	</limit>
+</IfModule>
+
+# 5G:[REQUEST STRINGS]
+<IfModule mod_alias.c>
+	RedirectMatch 403 (https?|ftp|php)\://
+	RedirectMatch 403 /(https?|ima|ucp)/
+	RedirectMatch 403 /(Permanent|Better)$
+	RedirectMatch 403 (\=\\\'|\=\\%27|/\\\'/?|\)\.css\()$
+	RedirectMatch 403 (\,|\)\+|/\,/|\{0\}|\(/\(|\.\.\.|\+\+\+|\||\\\"\\\")
+	RedirectMatch 403 \.(cgi|asp|aspx|cfg|dll|exe|jsp|mdb|sql|ini|rar)$
+	RedirectMatch 403 /(contac|fpw|install|pingserver|register)\.php$
+	RedirectMatch 403 (base64|crossdomain|localhost|wwwroot|e107\_)
+	RedirectMatch 403 (eval\(|\_vti\_|\(null\)|echo.*kae|config\.xml)
+	RedirectMatch 403 \.well\-known/host\-meta
+	RedirectMatch 403 /function\.array\-rand
+	RedirectMatch 403 \)\;\$\(this\)\.html\(
+	RedirectMatch 403 proc/self/environ
+	RedirectMatch 403 msnbot\.htm\)\.\_
+	RedirectMatch 403 /ref\.outcontrol
+	RedirectMatch 403 com\_cropimage
+	RedirectMatch 403 indonesia\.htm
+	RedirectMatch 403 \{\$itemURL\}
+	RedirectMatch 403 function\(\)
+	RedirectMatch 403 labels\.rdf
+	RedirectMatch 403 /playing.php
+	RedirectMatch 403 muieblackcat
+</IfModule>
+
+# 5G:[REQUEST METHOD]
+<ifModule mod_rewrite.c>
+	RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+	RewriteRule .* - [F]
+</IfModule>
+
+# 5G:[BAD IPS]
+<limit GET POST PUT>
+	Order Allow,Deny
+	Allow from all
+	# uncomment/edit/repeat next line to block IPs
+	# Deny from 123.456.789
+	
+	# July 6, 2013 - 18:55; Login attempt failed for reginaldkramersjjbo; United States Illinois Chicago
+	Deny from 108.178.5.219
+	
+	# July 3, 2013 - 08:17; tinyids; $_POST['comment_body']['und']['0']['value']; China Henan Zhengzhou
+	Deny from 123.149.127.147
+	
+	# July 3, 2013 - 08:17; tinyids; $_POST['comment_body']['und']['0']['value']; China Henan Zhengzhou
+	Deny from 125.41.91.81
+	
+	# June 22, 2013 - 14:15; tinyids; $_POST['comment_body']['und']['0']['value']; Canada Quebec Montreal
+	Deny from 198.100.144.229
+	
+	# June 22, 2013 - 14:15; tinyids; $_POST['comment_body']['und']['0']['value']; United States Texas Dallas
+	Deny from 50.2.194.240
+	
+	# July 10, 2013 - 01:54; access denied; node/add/blog; node/add/story; 	node/add/page; whitechairnode/add/story; Poland Swietokrzyskie Piekoszow
+	Deny from 91.236.75.67
+	
+	# July 10, 2013 - 00:23; page not found; http://www.pavolmikulas.com/#main-menu; China Jiangsu Nanjing
+	Deny from 114.230.103.223
+	
+	# July 17, 2013 - 00:23; page not found; http://www.pavolmikulas.com/administrator; Brazil Pernambuco Paulista
+	Deny from 187.109.150.246
+	
+	# July 26, 2013 - 09:45; Comment posted: best replica rolex.; China Zhejiang Hangzhou
+	Deny from 60.176.106.175
+	
+	# July 28, 2013 - 23:22; Comment posted: best replica rolex.; China Zhejiang Hangzhou
+	Deny from 115.196.89.204
+	
+	# July 26, 2013 - 02:59; page not found; sites/default/files/js/js_PrV8kS2c1q0AV5jIdYDvRBFkPRtUJe9r3oGg8croI9c.js; China Zhejiang Hangzhou
+	# Deny from 202.46.60.95
+	
+	# October 4, 2013 - 22:04; tinyids warning; Turkey Denizli
+	Deny from 94.102.1.189
+	
+	# June 25, 2014 - 22:04; access denied; admin/fckeditor/editor/filemanager/browser/default/connectors/uploadtest.html; Hong Kong
+	Deny from 122.10.90.242
+	
+	# June 25, 2014 - 22:04; access denied; node/add; China
+	Deny from 27.159.211.101
+	
+	# June 25, 2014 - 22:04; access denied; node/add; United States, CA, San Jose
+	#Deny from 192.200.31.149
+	
+	# June 25, 2014 - 22:04; access denied; node/add; United States, Arizona, Phoenix
+	Deny from 107.158.22.124
+	
+	# June 25, 2014 - 22:04; access denied; node/add; Seychelles
+	Deny from 196.196.16.203
+	
+	# June 25, 2014 - 22:04; access denied; node/add; United States, New York
+	Deny from 198.23.174.100
+	
+	# June 25, 2014 - 22:04; access denied; node/add; France, Roubaix
+	Deny from 5.135.31.11
+	
+	# June 25, 2014 - 22:04; access denied; node/add; France, Roubaix
+	Deny from 178.32.154.50
+	
+	# June 25, 2014 - 22:04; access denied; node/add; United Kingdom, England, Springfield
+	Deny from 82.39.176.35
+	
+	# May 17, 2014 - 18:31; access denied; node/add; United States, California, Los Angeles
+	Deny from 198.55.113.61
+	
+	# May 10, 2014 - 15:53; access denied; node/add; Sweden, Stockholm
+	Deny from 46.246.45.92
+	
+	# May 9, 2014 - 15:33; access denied; node/add; United States, Georgia, Atlanta
+	Deny from 23.226.232.173
+	
+	# May 7, 2014 - 15:14; access denied; node/add; United States, Georgia, Atlanta
+	Deny from 23.89.192.170
+	
+	# May 7, 2014 - 15:14; access denied; node/add; United States, Arizona, Phoenix
+	Deny from 198.143.136.57
+	
+	# May 5, 2014 - 19:30; access denied; node/add; United States, California, Los Angeles
+	Deny from 69.12.82.140
+	
+	# May 3, 2014 - 21:50; access denied; node/add; United States, Illinois, Chicago
+	Deny from 184.154.111.100
+	
+	# April 26, 2014 - 18:48; access denied; node/add; United States, California, Los Angeles
+	Deny from 69.12.89.2
+	
+	# June 19, 2015 - 19:48; PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '94.153.9.220' for key 'PRIMARY': INSERT INTO {httpbl}..., Ukraine, L'viv
+	Deny from 178.137.84.254
+	
+	# June 7, 2015 - 02:22; PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '178.137.84.254' for key 'PRIMARY': INSERT INTO {httpbl}..., Ukraine, L'viv
+	Deny from 94.153.9.220
+	
+	# Test
+	#Deny from localhost
+	
+</limit>
+# End of 5G BLACKLIST/FIREWALL
+# 20140625 PM
+
+
+
+
+
+# Override PHP settings that cannot be changed at runtime. See
+# sites/default/default.settings.php and drupal_environment_initialize() in
+# includes/bootstrap.inc for settings that can be changed at runtime.
+
+# PHP 5, Apache 1 and 2.
+<IfModule mod_php5.c>
+  php_flag magic_quotes_gpc                 off
+  php_flag magic_quotes_sybase              off
+  php_flag register_globals                 off
+  php_flag session.auto_start               off
+  php_value mbstring.http_input             pass
+  php_value mbstring.http_output            pass
+  php_flag mbstring.encoding_translation    off
+</IfModule>
+
+# Requires mod_expires to be enabled.
+<IfModule mod_expires.c>
+  # Enable expirations.
+  ExpiresActive On
+
+  # Cache all files for 2 weeks after access (A).
+  ExpiresDefault A1209600
+
+  <FilesMatch \.php$>
+    # Do not allow PHP scripts to be cached unless they explicitly send cache
+    # headers themselves. Otherwise all scripts would have to overwrite the
+    # headers set by mod_expires if they want another caching behavior. This may
+    # fail if an error occurs early in the bootstrap process, and it may cause
+    # problems if a non-Drupal PHP file is installed in a subdirectory.
+    ExpiresActive Off
+  </FilesMatch>
+</IfModule>
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  # Set "protossl" to "s" if we were accessed via https://.  This is used later
+  # if you enable "www." stripping or enforcement, in order to ensure that
+  # you don't bounce between http and https.
+  RewriteRule ^ - [E=protossl]
+  RewriteCond %{HTTPS} on
+  RewriteRule ^ - [E=protossl:s]
+
+  # Make sure Authorization HTTP header is available to PHP
+  # even when running as CGI or FastCGI.
+  RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+  # Block access to "hidden" directories whose names begin with a period. This
+  # includes directories used by version control systems such as Subversion or
+  # Git to store control files. Files whose names begin with a period, as well
+  # as the control files used by CVS, are protected by the FilesMatch directive
+  # above.
+  #
+  # NOTE: This only works when mod_rewrite is loaded. Without mod_rewrite, it is
+  # not possible to block access to entire directories from .htaccess, because
+  # <DirectoryMatch> is not allowed here.
+  #
+  # If you do not have mod_rewrite installed, you should remove these
+  # directories from your webroot or otherwise protect them from being
+  # downloaded.
+  RewriteRule "(^|/)\." - [F]
+
+  # If your site can be accessed both with and without the 'www.' prefix, you
+  # can use one of the following settings to redirect users to your preferred
+  # URL, either WITH or WITHOUT the 'www.' prefix. Choose ONLY one option:
+  #
+  # To redirect all users to access the site WITH the 'www.' prefix,
+  # (http://example.com/... will be redirected to http://www.example.com/...)
+  # uncomment the following:
+  # RewriteCond %{HTTP_HOST} .
+  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # RewriteRule ^ http%{ENV:protossl}://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  #
+  # To redirect all users to access the site WITHOUT the 'www.' prefix,
+  # (http://www.example.com/... will be redirected to http://example.com/...)
+  # uncomment the following:
+  # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  # RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
+
+  # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
+  # VirtualDocumentRoot and the rewrite rules are not working properly.
+  # For example if your site is at http://example.com/drupal uncomment and
+  # modify the following line:
+  # RewriteBase /drupal
+  #
+  # If your site is running in a VirtualDocumentRoot at http://example.com/,
+  # uncomment the following line:
+  RewriteBase /
+
+  # Pass all requests not referring directly to files in the filesystem to
+  # index.php. Clean URLs are handled in drupal_environment_initialize().
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  RewriteRule ^ index.php [L]
+
+  # Rules to correctly serve gzip compressed CSS and JS files.
+  # Requires both mod_rewrite and mod_headers to be enabled.
+  <IfModule mod_headers.c>
+    # Serve gzip compressed CSS files if they exist and the client accepts gzip.
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
+
+    # Serve gzip compressed JS files if they exist and the client accepts gzip.
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.js $1\.js\.gz [QSA]
+
+    # Serve correct content types, and prevent mod_deflate double gzip.
+    RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1]
+    RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1]
+
+    <FilesMatch "(\.js\.gz|\.css\.gz)$">
+      # Serve correct encoding type.
+      Header set Content-Encoding gzip
+      # Force proxies to cache gzipped & non-gzipped css/js files separately.
+      Header append Vary Accept-Encoding
+    </FilesMatch>
+  </IfModule>
+</IfModule>

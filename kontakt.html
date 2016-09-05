@@ -1,0 +1,45 @@
+---
+title: Kontakt
+description: Pomáhame žiakom a študentom v núdzi. Chcete vedieť viac? Kontaktujte nás.
+subtitle: Pomáhame žiakom a študentom v núdzi. Chcete vedieť viac? Kontaktujte nás.
+permalink: /kontakt/
+layout: default
+itemtype: contact
+group: subpage
+order: 5
+---
+<div tabindex="-1" class="custom-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+  </div>
+</div>
+<div class="container custom-container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="custom-section">
+        <p>Pomáhame žiakom a študentom v núdzi. Chcete vedieť viac? Kontaktujte nás.</p>
+      </div>
+      <div class="custom-section">
+        <form class="cf" method="POST" data-email="{{ site.email }}">
+          <div class="form-group">
+            <label for="inputName1">Meno a priezvisko</label>
+            <input type="text" class="form-control" name="name" id="inputName1" placeholder="Vaše meno">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail1">Emailová adresa</label>
+            <input type="email" class="form-control" name="_replyto" id="inputEmail1" placeholder="Váš email">
+            <input type="hidden" name="_format" value="plain" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_next" value="{{ "/odpoved/" | prepend: site.baseurl | prepend: site.url }}" />
+          </div>
+          <div class="form-group">
+            <label for="inputMessage1">Správa</label>
+            <textarea name="message" class="form-control" id="inputMessage1"></textarea>
+          </div>
+          <input type="submit" class="btn btn-default" value="Odoslať">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
