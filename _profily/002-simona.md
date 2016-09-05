@@ -2,7 +2,7 @@
 title: Simona
 subtitle: Simona je žiačkou 5B na základnej škole v Markušovciach. Rada chytá ryby a hádže kamienky do vody.
 image: 002-simona.jpg
-published: true
+published: false
 group: profile
 koho-co: Simonu
 ---
