@@ -9,117 +9,85 @@ group: subpage
 order: 3
 ---
 <div tabindex="-1" class="custom-header">
-	<div class="container">
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.subtitle }}</p>
-	</div>
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+  </div>
 </div>
 <div class="container custom-container">
-	<div class="row">
-		<div class="col-md-9">
-			<div class="custom-section">
-				<p class="alert alert-info" role="alert">Do 30.9.2016 prebieha výber žiakov. Prídite opäť na našu stránku, budeme sa tešiť.</p>
-			</div>
-		</div>
-	</div>
-	{% assign j = 0 %}
-	{% for i in site.profily %}
-	{% unless i.published == false %}
-	{% assign item_id = i.id | handleize | replace:'/profily/', '' %}
-	<div class="row profile custom-section">
-		<div class="col-md-3">
-			<img alt="{{ i.title }}" class="img-circle" src="{{ site.baseurl }}/img/{{ i.image }}" />
-		</div>
-		<div class="col-md-6">
-			<h2>{{ i.title }}</h2>
-			<p class="lead">{{ i.subtitle }}</p><br>
-			
-			{% comment %} Read more {% endcomment %}
-			<p>
-		        <a id="link{{ j }}" class="read-more" role="button" data-toggle="collapse" href="#collapse{{ j }}" aria-expanded="false" aria-controls="collapse{{ j }}">
-					<span class="icon-read-more"></span>
-					<span class="read-text">Zobraziť viac</span>
-				</a>
-			</p>
+  <div class="row">
+    <div class="col-md-9">
+      <div class="custom-section">
+        <p class="alert alert-info" role="alert">Do 30.9.2016 prebieha výber žiakov. Prídite opäť na našu stránku, budeme sa tešiť.</p>
+      </div>
+    </div>
+  </div>
+  {% assign j = 0 %}
+  {% for i in site.profily %}
+  {% unless i.published == false %}
+  {% assign item_id = i.id | handleize | replace:'/profily/', '' %}
+  <div class="row profile custom-section">
+    <div class="col-md-3">
+      <img alt="{{ i.title }}" class="img-circle" src="{{ site.baseurl }}/img/{{ i.image }}" />
+    </div>
+    <div class="col-md-6">
+      <h2>{{ i.title }}</h2>
+      <p class="lead">{{ i.subtitle }}</p><br>
+      
+      {% comment %} Read more {% endcomment %}
+      <p>
+        <a id="link{{ j }}" class="read-more" role="button" data-toggle="collapse" href="#collapse{{ j }}" aria-expanded="false" aria-controls="collapse{{ j }}">
+          <span class="icon-read-more"></span>
+          <span class="read-text">Zobraziť viac</span>
+        </a>
+      </p>
 
-			{% comment %} Form {% endcomment %}
-			<div class="collapse" id="collapse{{ j }}">
-				{{ i.content | markdownify }}
-				<div class="well">
-					<form class="cf" method="POST" data-email="jgbgzpkbogi@msgor.ius">
-						<div class="form-group">
-							<label for="inputName{{ j }}">Meno a priezvisko</label>
-							<input type="text" class="form-control" name="name" id="inputName{{ j }}" placeholder="Vaše meno">
-						</div>
-						<div class="form-group">
-							<label for="inputEmail{{ j }}">Emailová adresa</label>
-							<input type="email" class="form-control" name="_replyto" id="inputEmail{{ j }}" placeholder="Váš email">
-							<input type="hidden" name="_format" value="plain" />
-							<input type="text" name="_gotcha" style="display:none" />
-							<input type="hidden" name="_next" value="https://davatjeviac.github.io/dakujeme/" />
-							<input type="hidden" name="_subject" value="{{ item_id }}" />
-						</div>
-						<div class="form-group">
-							<label for="inputMessage{{ j }}">Správa</label>
-							<textarea name="message" class="form-control" id="inputMessage{{ j }}">Prostredníctvom vášho Občianskeho združenia by som rád/rada podporil(a) {{ i.koho-co }}.</textarea>
-						</div>
-						<input type="submit" class="btn btn-default" value="Odoslať">
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<script>
-	$(document).ready(function(){
-		
-		$("#collapse{{ j }}").on('show.bs.collapse', function () {
-			$("#link{{ j }} > .read-text").text('Zobraziť menej');
-			$("#link{{ j }} > .icon-read-more").removeClass( "icon-read-more" ).addClass( "icon-read-less" );
-			
-		});
-		
-		$("#collapse{{ j }}").on('hidden.bs.collapse', function () {
-			$("#link{{ j }} > .read-text").text('Zobraziť viac');
-			$("#link{{ j }} > .icon-read-less").removeClass( "icon-read-less" ).addClass( "icon-read-more" );
-		});
-		
-		/*
-		$('.read-more').click(function (e) {
-			$(this).text('Read Less');
-		})
-		*/
-	
-		/*
-		$('.read-more').on('hidden.bs.collapse', function () {
-			var $this = $(this);
-			$this.text('Read Less');
-			$(this).html("Read less 2");
-			if($this.hasClass('collapsed')){
-				$this.text('Zobraziť viac');
-			} else {
-				$this.text('Zobraziť menej');
-			}
-		})
-		*/
-	
-		/*
-		$('.read-more').click(function(){
-			var $this = $(this);
-			$this.toggleClass('collapsed');
-			if($this.hasClass('collapsed')){
-				$this.text('Zobraziť viac');
-			} else {
-				$this.text('Zobraziť menej');
-			}
-		});
-		*/
+      {% comment %} Form {% endcomment %}
+      <div class="collapse" id="collapse{{ j }}">
+        {{ i.content | markdownify }}
+        <div class="well">
+          <form class="cf" method="POST" data-email="jgbgzpkbogi@msgor.ius">
+            <div class="form-group">
+              <label for="inputName{{ j }}">Meno a priezvisko</label>
+              <input type="text" class="form-control" name="name" id="inputName{{ j }}" placeholder="Vaše meno">
+            </div>
+            <div class="form-group">
+              <label for="inputEmail{{ j }}">Emailová adresa</label>
+              <input type="email" class="form-control" name="_replyto" id="inputEmail{{ j }}" placeholder="Váš email">
+              <input type="hidden" name="_format" value="plain" />
+              <input type="text" name="_gotcha" style="display:none" />
+              <input type="hidden" name="_next" value="https://davatjeviac.github.io/dakujeme/" />
+              <input type="hidden" name="_subject" value="{{ item_id }}" />
+            </div>
+            <div class="form-group">
+              <label for="inputMessage{{ j }}">Správa</label>
+              <textarea name="message" class="form-control" id="inputMessage{{ j }}">Prostredníctvom vášho Občianskeho združenia by som rád/rada podporil(a) {{ i.koho-co }}.</textarea>
+            </div>
+            <input type="submit" class="btn btn-default" value="Odoslať">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  $(document).ready(function(){
+    
+    $("#collapse{{ j }}").on('show.bs.collapse', function () {
+      $("#link{{ j }} > .read-text").text('Zobraziť menej');
+      $("#link{{ j }} > .icon-read-more").removeClass( "icon-read-more" ).addClass( "icon-read-less" );
+      
+    });
+    
+    $("#collapse{{ j }}").on('hidden.bs.collapse', function () {
+      $("#link{{ j }} > .read-text").text('Zobraziť viac');
+      $("#link{{ j }} > .icon-read-less").removeClass( "icon-read-less" ).addClass( "icon-read-more" );
+    });
 
-	});
-	</script>
+  });
+  </script>
 
-	{% assign j = j | plus: 1 %}
-	{% endunless %}
-	{% endfor %}
+  {% assign j = j | plus: 1 %}
+  {% endunless %}
+  {% endfor %}
 </div>
-

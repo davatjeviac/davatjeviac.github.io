@@ -32,7 +32,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.slim.min.js"></script>
   <script src="{{ "/js/" | append: site.js-file | prepend: site.baseurl }}"></script>
-  {% comment %}<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext" rel="stylesheet">{% endcomment %}
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext" rel="stylesheet">
   {% comment %} Include critical Above-the-Fold CSS {% endcomment %}
   {% capture critical %}
   {% include critical.scss %}

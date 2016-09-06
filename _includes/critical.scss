@@ -1,6 +1,5 @@
 @import "bootstrap/variables";
 
-
 html {
   font-family: $font-family-base;
 }
@@ -34,7 +33,6 @@ img {
   padding-right: ceil(($grid-gutter-width / 2));
 }
 
-
 .container {
 
   @media (min-width: $screen-sm-min) {
@@ -47,7 +45,6 @@ img {
     width: $container-lg;
   }
 }
-
 
 a[href^="mailto:"] {
   display: none;
@@ -73,8 +70,6 @@ a[href^="mailto:"] {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -84,5 +79,5 @@ a[href^="mailto:"] {
 }
 
 .chcem-pomoct{
-	font-size: 60px;
+  font-size: 60px;
 }
