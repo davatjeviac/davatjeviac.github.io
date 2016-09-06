@@ -2,7 +2,7 @@
 title: Jozef
 subtitle: Jozef je žiakom 5B na základnej škole v Markušovciach. Rád chytá ryby a hádže kamienky do vody.
 image: 003-jozef.jpg
-published: true
+published: false
 group: profile
 koho-co: Jozefa
 ---

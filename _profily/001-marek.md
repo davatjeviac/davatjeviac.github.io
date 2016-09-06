@@ -2,7 +2,7 @@
 title: Marek
 subtitle: Marek je žiakom 5B na základnej škole v Markušovciach. Rád chytá ryby a hádže kamienky do vody.
 image: 001-marek.jpg
-published: true
+published: false
 group: profile
 koho-co: Mareka
 ---
