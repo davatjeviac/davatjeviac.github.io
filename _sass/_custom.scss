@@ -49,15 +49,13 @@ footer {
   margin: 0 auto 30px;
 }
 .custom-header {
-  font-size: 24px;
-  padding-bottom: 60px;
-  padding-top: 60px;
-  text-align: left;
-}
-.custom-header {
   font-size: 20px;
   padding: 30px 0;
   margin-bottom: 40px;
+  text-align: center;
+  @media (min-width: $screen-md-min) {
+    text-align: left;
+  }
 }
 .custom-header,
 .custom-masthead {
@@ -68,18 +66,20 @@ footer {
 }
 .custom-header h1,
 .custom-header p {
-  max-width: 20em;
+  @media (min-width: $screen-md-min) {
+    max-width: 20em;
+  }
 }
 .custom-header h1 {
   line-height: 1;
   color: $brand-primary;
   margin-top: 30px;
+  
   @media (min-width: $screen-sm-min) {
     font-size: 60px;
   }
 }
 .custom-header p {
-  font-weight: 300;
   line-height: 1.4;
   margin-bottom: 0;
 }
@@ -169,7 +169,7 @@ footer {
         width: 18px;
         height: 15px;
         path {
-          fill: $gray-dark;
+          fill: $brand-primary;
         }
       }
     }
@@ -188,6 +188,20 @@ footer {
     }
   }
 }
+.snvf{
+	  .pgl {
+	    padding: .25em;
+	    display: block;
+	  }
+  .pgl.active {
+    color: $brand-primary-dark;
+  }
+  @media (min-width: $screen-md-min) {
+	  .pgl {
+	    padding: 0;
+	  }
+  }
+}
 .alert {
   line-height: 2em;
   padding: 3px;
@@ -201,16 +215,19 @@ footer {
   margin-bottom: 100px;
   @media (min-width: $screen-lg-min) {
     h2 {
-      margin-top: 50px;
+      margin-top: 11px;
     }
   }
 }
 // Icons
-.icon-download:before {
-  content: "\e901";
-}
 .icon-euro:before {
   content: "\e902";
+}
+.icon-viac:before {
+  content: "\e905";
+}
+.icon-download:before {
+  content: "\e901";
 }
 .icon-facebook:before {
   content: "\e903";
@@ -218,17 +235,8 @@ footer {
 .icon-googleplus:before {
   content: "\e904";
 }
-.icon-read-less:before {
-  content: "\e905";
-}
-.icon-read-more:before {
-  content: "\e906";
-}
 .icon-twitter:before {
   content: "\e907";
-}
-.icon-viac:before {
-  content: "\e908";
 }
 .icon-ziak:before {
   content: "\e909";
@@ -252,3 +260,15 @@ footer {
 .story img {
 	max-width: 164px;
 }
+// Form
+textarea.form-control {
+	height: 6em;
+	@media (min-width: $screen-md-min) {
+		height: 4em;
+	}
+}
+form .row{
+	padding: .5em 0;
+}
+
+	

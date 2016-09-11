@@ -7,7 +7,7 @@
       </div>
       <div class="col-md-2">
         {% comment %} Main menu {% endcomment %}
-        <ul class="nav-stacked">
+        <ul class="nav-stacked snvf">
         {% assign pages = site.pages | sort: "order" | where: "group" , "subpage" %}
         {% for i in pages %}
           {% unless i.published == false %}

@@ -98,9 +98,3 @@ exclude:
 # CSS file
 #css-file: all.css
 css-file: main.css
-
-# JS file
-#js-file: all.js
-js-file: main.js
-
-
