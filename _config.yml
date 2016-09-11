@@ -82,8 +82,8 @@ compress_html:
   endings: all
 
 # Compress CSS
-#sass:
-  #style: compressed
+sass:
+  style: compressed
 
 # Exclude these files from your production _site
 exclude:
