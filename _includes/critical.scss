@@ -1,9 +1,9 @@
 @import "bootstrap/variables";
 
-/*
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin-ext';
-*/
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
 
 html {
   font-family: $font-family-base;
@@ -84,4 +84,173 @@ a[href^="mailto:"] {
 
 .chcem-pomoct{
   font-size: 60px;
+}
+
+.navbar-brand {
+    float: left;
+    font-size: 28px;
+    font-weight: 300;
+    height: 50px;
+    line-height: 22px;
+    padding: 14px 15px;
+}
+
+.snv {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    background-color: $body-bg;
+    border: 1px solid $body-bg-dark;
+    border-radius: 5px;
+    text-align: right;
+	z-index: 1001;
+    .mic {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 34px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+      > svg {
+        width: 18px;
+        height: 15px;
+        path {
+          fill: $brand-primary;
+        }
+      }
+    }
+    .trigger {
+      clear: both;
+      display: none;
+    }
+    &:hover .trigger {
+      display: block;
+    }
+    .pgl {
+      padding: .5em;
+      display: block;
+      float: none;
+      &:visited {
+        color: $brand-primary;
+      }
+      &:hover,
+      &:focus {
+        color: $brand-primary-dark;
+      }
+      -moz-user-select: none;
+      text-decoration: none;
+    }
+    .pgl.active {
+      color: $brand-primary-dark;
+    }
+  
+  @media (min-width: $screen-sm-min) {
+    float: right;
+	border: 0;
+	position: inherit;
+    .trigger {
+	  display: block;
+	  overflow: hidden;
+    }
+    .mic {
+      display: none;
+    }
+    .pgl {
+      /*Add padding to your links. This way, the user doesn’t have to hover over the exact point of the text.*/
+      padding: 1.25em .5em;
+      float: left;
+    }
+  }
+
+}
+
+.navbar {
+    margin-bottom: 22px;
+    min-height: 50px;
+    position: relative;
+}
+footer, header, main, nav {
+    display: block;
+}
+
+h1, h2, h3 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+// Home page
+.custom-masthead {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+.custom-masthead .lead {
+  font-size: 30px;
+  font-weight: inherit;
+  max-width: 13em;
+  text-shadow: 0 0 2px $body-bg;
+  margin: 0 auto 30px;
+}
+.custom-header {
+  font-size: 20px;
+  padding: 30px 0;
+  margin-bottom: 40px;
+  text-align: center;
+  @media (min-width: $screen-md-min) {
+    text-align: left;
+  }
+}
+.custom-header,
+.custom-masthead {
+  background-image: url("/img/davat-je-viac-ilustracia-siroka.svg");
+  background-size: 100% auto;
+  color: $brand-primary;
+  position: relative;
+}
+.custom-header h1,
+.custom-header p {
+  @media (min-width: $screen-md-min) {
+    max-width: 20em;
+  }
+}
+.custom-header h1 {
+  line-height: 1;
+  color: $brand-primary;
+  margin-top: 30px;
+  
+  @media (min-width: $screen-sm-min) {
+    font-size: 60px;
+  }
+}
+.custom-header p {
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.custom-featurette {
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 40px;
+  text-align: center;
+}
+.custom-featurette h3 {
+  color: $text-color;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.custom-featurette-title {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.custom-featurette .img-responsive {
+  margin-top: 0;
+  width: 100px;
+}
+.half-rule {
+  margin: 60px auto;
+  width: 100px;
 }
