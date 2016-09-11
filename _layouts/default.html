@@ -21,6 +21,5 @@ layout: compress
   {{ content }}
   {% include footer.html %}
   </body>
-  {% comment %} Decode all emails and set contact form action {% endcomment %}
-  <script type="text/javascript">/* <![CDATA[ */ try{function d(n,t){for(var u="",r=0,i="",r=0;r<n.length;r+=1)i=n.charCodeAt(r),u+=i>=65&&i<=90?String.fromCharCode((i-65+t)%26+65):i>=97&&i<=122?String.fromCharCode((i-97+t)%26+97):n.charAt(r);return u}setTimeout(function(){var r=document.getElementsByClassName("cf"),o,s=20,f,t=document.getElementsByTagName("a"),n,i,u,e;if(r)for(n=0;n<r.length;n+=1)f=r[n].getAttribute("data-email"),f&&(o=d(f,s),r[n].setAttribute("action","https://formspree.io/"+o));for(n=0;n<t.length;n+=1)i=t[n].getAttribute("href"),i&&i.substring(0,7)==="mailto:"&&(u=i.substring(7,i.length),u&&(e=d(u,20),t[n].href="mailto:"+e,t[n].innerHTML===u&&(t[n].innerHTML=e),t[n].style.display="inline-block"))},500)}catch(ignore){}; /* ]]> */ </script>
+
 </html>
