@@ -7,13 +7,13 @@ title: Dávať je viac
 subtitle: občianske združenie
 
 # Short bio or description (displayed in the header)
-description: Dávať je viac je občianske združenie podporujúca žiakov a študentov v núdzi. Spájame ľudí, ktorí chcú pomôcť s tými, ktorí pomoc potrebujú.
+description: Dávať je viac je občianske združenie podporujúca žiakov a študentov v hmotnej núdzi. Spájame ľudí, ktorí chcú pomôcť s tými, ktorí pomoc potrebujú.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/davatjeviac/master/img/davatjeviac.png
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-84224539-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -29,8 +29,8 @@ baseurl: ""
 
 
 # Email
-#email: "jgbgzpkbogi@jgbgzpkbogi.yq"
-email: "jgbgzpkbogi@msgor.ius"
+email: "jgbgzpkbogi@jgbgzpkbogi.yq"
+#email: "jgbgzpkbogi@msgor.ius"
 
 
 # Includes links to social in the footer

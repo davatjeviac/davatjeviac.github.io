@@ -1,4 +1,4 @@
-# davatjeviac.sk
+# www.davatjeviac.sk
 This is the source of website running at [www.davatjeviac.sk](http://www.davatjeviac.sk). The site is built with [Jekyll](http://jekyllrb.com) and served by GitHub Pages.  
 
 # License
