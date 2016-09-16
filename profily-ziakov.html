@@ -9,75 +9,67 @@ group: subpage
 order: 3
 ---
 <div tabindex="-1" class="custom-header">
-	<div class="container">
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.subtitle }}</p>
-	</div>
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+  </div>
 </div>
 <div class="container custom-container">
-	<div class="row">
-		<div class="col-md-9">
-			<div class="custom-section">
-				<p class="alert alert-info" role="alert">Do 30.9.2016 prebieha výber žiakov. Prídite opäť na našu stránku, budeme sa tešiť.</p>
-			</div>
-		</div>
-	</div>
-	{% assign j = 0 %}
-	{% for i in site.profily %}
-	{% unless i.published == false %}
-	{% assign item_id = i.id | handleize | replace:'/profily/', '' %}
-	<div class="row profile custom-section">
-		<div class="col-md-3">
-			<img alt="{{ i.title }}" class="img-circle" src="{{ site.baseurl }}/img/{{ i.image }}" />
-		</div>
-		
-		<div class="col-md-6">
-			<h2>{{ i.title }}</h2>
-			<p class="lead">{{ i.subtitle }}</p>
-			<br>
-			{% comment %} Form {% endcomment %}
-			<div>
-				{{ i.content | markdownify }}
-				<div class="well">
-					<form method="POST" class="cf" data-email="jgbgzpkbogi@msgor.ius">
-						
-						<div class="row">
-							
-							<div class="col-md-6">
-								<label for="inputName{{ j }}">Meno a priezvisko</label>
-								<input type="text" class="form-control" name="name" id="inputName{{ j }}" placeholder="Vaše meno">
-							</div>
-							
-							<div class="col-md-6">
-								<label for="inputEmail{{ j }}">Emailová adresa</label>
-								<input type="email" class="form-control" name="_replyto" id="inputEmail{{ j }}" placeholder="Váš email">
-								<input type="hidden" name="_format" value="plain" />
-								<input type="text" name="_gotcha" style="display:none" />
-								<input type="hidden" name="_next" value="https://davatjeviac.github.io/dakujeme/" />
-								<input type="hidden" name="_subject" value="{{ item_id }}" />
-							</div>
-							
-						</div>
-						
-						<div class="row">
-							<div class="col-md-12">
-								<label for="inputMessage{{ j }}">Správa</label>
-								<textarea name="message" class="form-control" id="inputMessage{{ j }}" rows="3">Prostredníctvom vášho Občianskeho združenia by som rád/rada podporil(a) {{ i.koho-co }}.</textarea>
-							</div>
-						</div>
-						
-						<div class="row">
-							<div class="col-md-12">
-								<input type="submit" class="btn btn-default" value="Odoslať">
-							</div>
-						</div>
-						
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	{% assign j = j | plus: 1 %}
-	{% endunless %}
-	{% endfor %}
+  <div class="row">
+    <div class="col-md-9">
+      <div class="custom-section">
+        <p class="alert alert-info" role="alert">Do 30.9.2016 prebieha výber žiakov. Prídite opäť na našu stránku, budeme sa tešiť.</p>
+      </div>
+    </div>
+  </div>
+  {% assign j = 0 %}
+  {% for i in site.profily %}
+  {% unless i.published == false %}
+  {% assign item_id = i.id | handleize | replace:'/profily/', '' %}
+  <div class="row profile custom-section">
+    <div class="col-md-3">
+      <img alt="{{ i.title }}" class="img-circle" src="{{ site.baseurl }}/img/{{ i.image }}" />
+    </div>
+    <div class="col-md-6">
+      <h2>{{ i.title }}</h2>
+      <p class="lead">{{ i.subtitle }}</p>
+      <br>
+      {% comment %} Form {% endcomment %}
+      <div>
+        {{ i.content | markdownify }}
+        <div class="well">
+          <form method="POST" class="cf" data-email="{{ site.email }}">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="inputName{{ j }}">Meno a priezvisko</label>
+                <input type="text" class="form-control" name="name" id="inputName{{ j }}" placeholder="Vaše meno">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail{{ j }}">Emailová adresa</label>
+                <input type="email" class="form-control" name="_replyto" id="inputEmail{{ j }}" placeholder="Váš email">
+                <input type="hidden" name="_format" value="plain" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_next" value="https://davatjeviac.github.io/dakujeme/" />
+                <input type="hidden" name="_subject" value="{{ item_id }}" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="inputMessage{{ j }}">Správa</label>
+                <textarea name="message" class="form-control" id="inputMessage{{ j }}" rows="3">Prostredníctvom vášho Občianskeho združenia by som rád/rada podporil(a) {{ i.koho-co }}.</textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input type="submit" class="btn btn-default" value="Odoslať">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% assign j = j | plus: 1 %}
+  {% endunless %}
+  {% endfor %}
 </div>

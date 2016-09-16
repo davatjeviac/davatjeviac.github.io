@@ -12,14 +12,11 @@ footer {
     text-align: left;
   }
 }
-
-
 .nav-stacked {
-	list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 .custom-address {
   margin-bottom: 20px;
 }
@@ -44,7 +41,6 @@ footer {
     margin: 0;
   }
 }
-
 // Home page
 .custom-masthead {
   padding: 80px 0 40px;
@@ -93,36 +89,29 @@ footer {
   margin-bottom: 0;
 }
 .custom-featurette {
-    //border-bottom: 1px solid $body-bg-dark;
-    color: $text-color;
-    font-size: 16px;
-    line-height: 1.5;
-    //padding-bottom: 40px;
-    padding-top: 40px;
-    text-align: center;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 40px;
+  text-align: center;
 }
-
 .custom-featurette h3 {
-    color: $text-color;
-    font-weight: 400;
-    margin-bottom: 5px;
+  color: $text-color;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
-
 .custom-featurette-title {
-    font-size: 40px;
-    font-weight: 300;
-    margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
 }
-
 .custom-featurette .img-responsive {
-    margin-top: 0;
+  margin-top: 0;
   width: 100px;
 }
-
 .half-rule {
-    margin: 60px auto;
-    width: 100px;
-	
+  margin: 60px auto;
+  width: 100px;
 }
 .custom-num-lg {
   font-size: 108px;
@@ -138,7 +127,6 @@ footer {
 .vertical-indent {
   margin-bottom: 60px;
 }
-
 // Site navigation
 .snv {
   float: right;
@@ -151,6 +139,7 @@ footer {
   }
   .pgl {
     /*Add padding to your links. This way, the user doesn’t have to hover over the exact point of the text.*/
+    
     padding: 1.25em .5em;
     display: block;
     float: left;
@@ -206,19 +195,18 @@ footer {
     }
   }
 }
-
-.snvf{
-	  .pgl {
-	    padding: .25em;
-	    display: block;
-	  }
+.snvf {
+  .pgl {
+    padding: .25em;
+    display: block;
+  }
   .pgl.active {
     color: $brand-primary-dark;
   }
   @media (min-width: $screen-md-min) {
-	  .pgl {
-	    padding: 0;
-	  }
+    .pgl {
+      padding: 0;
+    }
   }
 }
 .alert {
@@ -238,31 +226,26 @@ footer {
     }
   }
 }
-
 img {
   color: $body-bg;
   max-width: 100%;
   vertical-align: middle;
 }
-
 // Icons
 a[href^="mailto:"] {
   display: none;
 }
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?fmnmvv');
-  src:  url('../fonts/icomoon.eot?fmnmvv#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?fmnmvv') format('truetype'),
-    url('../fonts/icomoon.woff?fmnmvv') format('woff'),
-    url('../fonts/icomoon.svg?fmnmvv#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?fmnmvv');
+  src: url('../fonts/icomoon.eot?fmnmvv#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?fmnmvv') format('truetype'), url('../fonts/icomoon.woff?fmnmvv') format('woff'), url('../fonts/icomoon.svg?fmnmvv#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
+  
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
@@ -270,18 +253,16 @@ a[href^="mailto:"] {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-chcem-pomoct:before {
   content: "\e900";
 }
-
-.chcem-pomoct{
-	font-size: 60px;
+.chcem-pomoct {
+  font-size: 60px;
 }
 .icon-chcem-pomoct:before {
   content: "\e900";
@@ -316,8 +297,6 @@ a[href^="mailto:"] {
 .icon-transparent {
   color: #AFC9B8;
 }
-
-
 .icon-facebook,
 .icon-googleplus,
 .icon-twitter {
@@ -329,17 +308,15 @@ a[href^="mailto:"] {
 }
 // Story
 .story img {
-	max-width: 164px;
+  max-width: 164px;
 }
 // Form
 textarea.form-control {
-	height: 6em;
-	@media (min-width: $screen-md-min) {
-		height: 4em;
-	}
+  height: 6em;
+  @media (min-width: $screen-md-min) {
+    height: 4em;
+  }
 }
-form .row{
-	padding: .5em 0;
+form .row {
+  padding: .5em 0;
 }
-
-	
