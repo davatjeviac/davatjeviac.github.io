@@ -1,6 +1,6 @@
 ---
-title: Simona
-description: Príbeh Simony, žiačky 5B na základnej škole v Markušovciach.
+title: Kristína
+description: Mamka nám veľmi chýba
 image: davat-je-viac-dieta.png
 published: true
 ---
