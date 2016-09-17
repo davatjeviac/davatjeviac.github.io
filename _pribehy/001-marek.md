@@ -1,6 +1,6 @@
 ---
 title: Jozef
-description: Úryvok z listu
+description: Nie je nám ľahko
 image: davat-je-viac-dieta.png
 published: true
 ---
