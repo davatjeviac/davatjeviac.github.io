@@ -1,6 +1,6 @@
 ---
-title: Marek
-description: Príbeh Mareka, žiaka 5B na základnej škole v Markušovciach.
+title: Jozef
+description: Úryvok z listu
 image: davat-je-viac-dieta.png
 published: true
 ---
