@@ -1,7 +1,7 @@
 ---
 title: Martin Slúka
 description: Predseda Dozornej rady.
-image: davat-je-viac-dobrovolnik.png
+image: mato-sluka.jpg.png
 published: true
 ---
 Právnik - advokát
