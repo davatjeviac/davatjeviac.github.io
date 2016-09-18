@@ -23,5 +23,5 @@ Mgr. Pavla Dunčková
 ZŠ s materskou školou Markušovce  
 Školská 16, 05321 Markušovce  
 053/4498118  
-<yqurg@fysgxqayubik.yq>  
-Kontakt: <vgbrotgjatiqu@msgor.ius>  
+<yzginaxqg@nuzsgor.ius>  
+Kontakt: <yzginaxqg@nuzsgor.ius>  
