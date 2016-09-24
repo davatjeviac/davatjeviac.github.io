@@ -11,7 +11,7 @@ koho-co: Kristíny
 **Môj domov**: bývam v Spišskej Novej Vsi  
 **Moje záľuby**: kreslenie, čítanie kníh, beh  
 **Čím chcem byť**: chcela by som pracovať v laboratóriu  
-**Prečo sa uchádzam o podporu**: Som zo sedemčlennej rodiny. Pred dvoma rokmi nám zomrela mamka na rakovinu. 
+**Prečo sa uchádzam o podporu**: Som zo sedemčlennej rodiny. Pred dvoma rokmi nám zomrela mamka na rakovinu.                             
 **Odkaz pre môjho darcu**: Vašim darom nám veľmi pomôžete. Vopred ďakujem.
 
 **Suma, ktorú potrebujem: 293 EUR** 
