@@ -6,16 +6,16 @@ published: true
 group: profile
 koho-co: Jozefa
 ---
-Vek: 17 rokov  
-Škola: Gymnázium SNV 
-Môj domov: bývam v Smižanoch  
-Moje záľuby: programovanie  
-Čím chcem byť: chcel by som študovať informatiku  
-Prečo sa uchádzam o podporu: pre zlú finančnú situáciu v rodine
-Odkaz pre môjho darcu: budem veľmi rád, keď mi niekto pomôže s financovaním posledného ročníka na gymnáziu
+**Vek**: 17 rokov  
+**Škola**: Gymnázium SNV 
+**Môj domov**: bývam v Smižanoch  
+**Moje záľuby**: programovanie  
+**Čím chcem byť**: chcel by som študovať informatiku  
+**Prečo sa uchádzam o podporu**: pre zlú finančnú situáciu v rodine
+**Odkaz pre môjho darcu**: budem veľmi rád, keď mi niekto pomôže s financovaním posledného ročníka na gymnáziu
 
-Darovacia suma: 443 EUR 
-Na čo potrebujem peniaze: Príspevok do Rodičovskej rady 15 EUR, učebnica a pracovný zošit pre druhý cudzí jazyk 13 EUR,
+**Darovacia suma: 443 EUR** 
+**Na čo potrebujem peniaze**: Príspevok do Rodičovskej rady 15 EUR, učebnica a pracovný zošit pre druhý cudzí jazyk 13 EUR,
 vstupné na kultúrne programy v rámci vyučovania 10 EUR, školské potreby 20 EUR, 2 prihlášky na vysokú školu 70 EUR, cestovné 10 EUR/mesiac, stravné 20 EUR/mesiac, maturita 15 EUR
 
 ### Zodpovedný koordinátor
