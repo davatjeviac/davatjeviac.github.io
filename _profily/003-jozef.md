@@ -7,8 +7,7 @@ group: profile
 koho-co: Jozefa
 ---
 **Vek**: 17 rokov  
-**Škola**: Gymnázium SNV
-
+**Škola**: Gymnázium SNV 
 **Môj domov**: bývam v Smižanoch  
 **Moje záľuby**: programovanie  
 **Čím chcem byť**: chcel by som študovať informatiku  
