@@ -7,12 +7,12 @@ group: profile
 koho-co: Jozefa
 ---
 **Vek**: 17 rokov  
-**Škola**: Gymnázium SNV 
+**Škola**: Gymnázium SNV        
 **Môj domov**: bývam v Smižanoch  
 **Moje záľuby**: programovanie  
 **Čím chcem byť**: chcel by som študovať informatiku  
-**Prečo sa uchádzam o podporu**: pre zlú finančnú situáciu v rodine
-**Odkaz pre môjho darcu**: budem veľmi rád, keď mi niekto pomôže s financovaním posledného ročníka na gymnáziu
+**Prečo sa uchádzam o podporu**: Pre zlú finančnú situáciu v rodine. Moji rodičia sa rozviedli. Mám štyroch súrodencov, mamka pracuje za minimálnu mzdu. Tieto peniaze nám samozrejme nikdy nestačia, a tak si hľadáme rôzne brigády, aby sme mali na chod domácnosti.  
+**Odkaz pre môjho darcu**: budem veľmi rád, ak mi niekto pomôže s financovaním posledného ročníka na gymnáziu
 
 **Darovacia suma: 443 EUR** 
 
