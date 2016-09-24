@@ -10,7 +10,7 @@ koho-co: Slávky
 **Škola**: Gymnázium SNV        
 **Môj domov**: bývam v Spišskej Novej Vsi  
 **Moje záľuby**: kreslenie, čítanie kníh,   
-**Čím chcem byť**: architektkou 
+**Čím chcem byť**: architektkou                                                                            
 **Prečo sa uchádzam o podporu**: Uchádzam sa o podporu, pretože finančná situácia v našej rodine je zlá. Mám päť súrodencov a o celú rodinu sa stará otec. Mamka nám zomrela.                               
 **Odkaz pre môjho darcu**: Rada sa učím a chcem sa dostať na vysokú školu. Aj vďaka vám sa mi to môže podariť. 
 
