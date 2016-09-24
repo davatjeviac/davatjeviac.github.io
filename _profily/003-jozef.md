@@ -14,9 +14,9 @@ koho-co: Jozefa
 **Prečo sa uchádzam o podporu**: Pre zlú finančnú situáciu v rodine. Moji rodičia sa rozviedli. Mám štyroch súrodencov, mamka pracuje za minimálnu mzdu. Tieto peniaze nám samozrejme nikdy nestačia, a tak si hľadáme rôzne brigády, aby sme mali na chod domácnosti.  
 **Odkaz pre môjho darcu**: budem veľmi rád, ak mi niekto pomôže s financovaním posledného ročníka na gymnáziu
 
-**Darovacia suma: 443 EUR** 
+**Suma, ktorú potrebujem: 443 EUR** 
 
-**Na čo potrebujem peniaze**: Príspevok do Rodičovskej rady 15 EUR, učebnica a pracovný zošit pre druhý cudzí jazyk 13 EUR,
+**Na aký účel**: príspevok do Rodičovskej rady 15 EUR, učebnica a pracovný zošit pre druhý cudzí jazyk 13 EUR,
 vstupné na kultúrne programy v rámci vyučovania 10 EUR, školské potreby 20 EUR, 2 prihlášky na vysokú školu 70 EUR, cestovné 10 EUR/mesiac, stravné 20 EUR/mesiac, maturita 15 EUR
 
 ### Zodpovedný koordinátor
