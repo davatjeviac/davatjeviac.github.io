@@ -1,7 +1,7 @@
 ---
 title: Jozef
 subtitle: Jozef je študent štvrtého ročníka na gymnáziu v Spišskej Novej Vsi.  
-image: 
+image: davat-je-viac-dobrovolnik.png
 published: true
 group: profile
 koho-co: Jozefa
