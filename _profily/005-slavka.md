@@ -1,7 +1,7 @@
 ---
 title: Slávka
 subtitle: Slávka je študentkou tretieho ročníka na gymnáziu v Spišskej Novej Vsi.  
-image: davat-je-viac-dobrovolnik.png
+image: davat-je-viac-dieta.png
 published: true
 group: profile
 koho-co: Slávky
