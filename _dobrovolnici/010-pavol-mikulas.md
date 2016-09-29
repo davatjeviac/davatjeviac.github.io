@@ -1,7 +1,7 @@
 ---
 title: Pavol Mikuláš
-description: Správca internetovej stránky.
+description: Dizajnér a učiteľ, Súkromná stredná umelecká škola dizajnu, Bratislava  (správca internetovej stránky)
 image: pavol-mikulas.jpg
 published: true
 ---
-Dizajnér a učiteľ na strednej umeleckej škole v Bratislave
+
