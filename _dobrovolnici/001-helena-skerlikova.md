@@ -1,6 +1,6 @@
 ---
 title: Helena Škerlíková
-description: Učiteľka na Gymnáziu v Spišskej Novej Vsi
+description: Učiteľka, Gymnázium Školská 7, Spišská Nová Ves (členka Správnej rady)
 image: hela-skerlikova.jpg
 published: true
 ---
