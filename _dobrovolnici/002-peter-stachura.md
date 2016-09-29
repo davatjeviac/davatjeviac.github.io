@@ -1,6 +1,6 @@
 ---
 title: Peter Stachura
-description: Lekár anesteziológ, Klinikum Bayreuth, Nemecko
+description: Lekár, Klinikum Bayreuth, Nemecko (podpredseda Správnej rady)
 image: peter-stachura.jpg
 published: true
 ---
