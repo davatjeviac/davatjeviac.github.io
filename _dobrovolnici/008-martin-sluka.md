@@ -1,6 +1,6 @@
 ---
 title: Martin Slúka
-description: Právnik, advokát
+description: Právnik (člen Dozornej rady)
 image: davat-je-viac-dobrovolnik.png
 published: true
 ---
