@@ -5,6 +5,7 @@ image: 002-simona.jpg
 published: false
 group: profile
 koho-co: Simonu
+email: vgbrotgjatiqu@msgor.ius
 ---
 Vek: 11 rokov  
 Škola: ZŠ Markušovce  

@@ -5,6 +5,7 @@ image: davat-je-viac-dieta.png
 published: true
 group: profile
 koho-co: Jozefa
+email: yqkxroqubg@mesytb.yq
 ---
 **Vek**: 17 rokov  
 **Škola**: Gymnázium SNV        
@@ -25,5 +26,4 @@ RNDr. Helena Škerlíková
 Gymnázium SNV  
 Školská 7, 052 01 Spišská Nová Ves  
 053/4422259  
-<yqkxroqubg@mesytb.yq>  
 Kontakt: <yqkxroqubg@mesytb.yq>  

@@ -5,13 +5,14 @@ image: davat-je-viac-dieta.png
 published: true
 group: profile
 koho-co: Kristíny
+email: yqkxroqubg@mesytb.yq
 ---
 **Vek**: 15 rokov  
-**Škola**: Gymnázium SNV        
+**Škola**: Gymnázium SNV  
 **Môj domov**: bývam v Spišskej Novej Vsi  
 **Moje záľuby**: kreslenie, čítanie kníh, beh  
 **Čím chcem byť**: chcela by som pracovať v laboratóriu  
-**Prečo sa uchádzam o podporu**: Som zo sedemčlennej rodiny. Pred dvoma rokmi nám zomrela mamka na rakovinu.                             
+**Prečo sa uchádzam o podporu**: Som zo sedemčlennej rodiny. Pred dvoma rokmi nám zomrela mamka na rakovinu.  
 **Odkaz pre môjho darcu**: Vašim darom nám veľmi pomôžete. Vopred ďakujem.
 
 **Suma, ktorú potrebujem: 293 EUR** 
@@ -25,5 +26,4 @@ RNDr. Helena Škerlíková
 Gymnázium SNV  
 Školská 7, 052 01 Spišská Nová Ves  
 053/4422259  
-<yqkxroqubg@mesytb.yq>  
 Kontakt: <yqkxroqubg@mesytb.yq>  

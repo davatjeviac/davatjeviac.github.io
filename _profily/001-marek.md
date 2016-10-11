@@ -5,6 +5,7 @@ image: 001-marek.jpg
 published: false
 group: profile
 koho-co: Mareka
+email: vgbrotgjatiqu@msgor.ius
 ---
 Vek: 12 rokov  
 Škola: ZŠ Markušovce  

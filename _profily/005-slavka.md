@@ -5,13 +5,14 @@ image: davat-je-viac-dieta.png
 published: true
 group: profile
 koho-co: Slávky
+email: yqkxroqubg@mesytb.yq
 ---
 **Vek**: 16 rokov  
 **Škola**: Gymnázium SNV        
 **Môj domov**: bývam v Spišskej Novej Vsi  
 **Moje záľuby**: kreslenie, čítanie kníh,   
-**Čím chcem byť**: architektkou                                                                            
-**Prečo sa uchádzam o podporu**: Uchádzam sa o podporu, pretože finančná situácia v našej rodine je zlá. Mám päť súrodencov a o celú rodinu sa stará otec. Mamka nám zomrela.                               
+**Čím chcem byť**: architektkou  
+**Prečo sa uchádzam o podporu**: Uchádzam sa o podporu, pretože finančná situácia v našej rodine je zlá. Mám päť súrodencov a o celú rodinu sa stará otec. Mamka nám zomrela.  
 **Odkaz pre môjho darcu**: Rada sa učím a chcem sa dostať na vysokú školu. Aj vďaka vám sa mi to môže podariť. 
 
 **Suma, ktorú potrebujem: 364 EUR** 
@@ -25,5 +26,4 @@ RNDr. Helena Škerlíková
 Gymnázium SNV  
 Školská 7, 052 01 Spišská Nová Ves  
 053/4422259  
-<yqkxroqubg@mesytb.yq>  
 Kontakt: <yqkxroqubg@mesytb.yq>  

@@ -2,15 +2,15 @@
 layout: compress
 ---
 <!DOCTYPE html>
-{% if page.type == "index" %}
+{% if page.itemtype == "index" %}
 <html lang="{{ site.lang }}" itemtype="http://schema.org/WebPage" itemscope="">
-{% elsif page.type == "contact" %}
+{% elsif page.itemtype == "contact" %}
 <html lang="{{ site.lang }}" itemtype="http://schema.org/ContactPage" itemscope="">
-{% elsif page.type == "about" %}
+{% elsif page.itemtype == "about" %}
 <html lang="{{ site.lang }}" itemtype="http://schema.org/AboutPage" itemscope="">
 {% else %}
 <html lang="{{ site.lang }}">
-  {% endif %}
+{% endif %}
   {% include head.html %}
   {% if page.group %}
     <body class="{{ page.group }}">
