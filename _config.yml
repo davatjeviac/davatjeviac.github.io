@@ -79,7 +79,6 @@ kramdown:
 compress_html:
   clippings: all
   comments: all
-  endings: all
 
 # Compress CSS
 sass:
