@@ -23,7 +23,7 @@ order: 4
         <img alt="{{ i.title }}" class="img-circle" src="{{ site.baseurl }}/img/{{ i.image }}" />
         <h2>{{ i.title }}</h2>
         <p class="lead">{{ i.description }}</p>
-        <p>{{ i.content | markdownify }}</p>
+        {{ i.content | markdownify }}
       </div>
     </div>
   </div>
