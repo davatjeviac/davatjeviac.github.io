@@ -1,5 +1,5 @@
 ---
-title: ĎAKUJEME!                    Jozefovi sa podarilo nájsť darcu.
+title: ĎAKUJEME! Jozef už má darcu.
 subtitle: Jozef je študent štvrtého ročníka na gymnáziu v Spišskej Novej Vsi.  
 image: davat-je-viac-dieta.png
 published: true
