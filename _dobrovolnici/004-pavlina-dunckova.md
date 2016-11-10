@@ -1,7 +1,7 @@
 ---
 title: Pavlína Dunčková 
 description: Učiteľka, ZŠ Markušovce (predsedníčka Správnej rady)
-image: davat-je-viac-dobrovolnik.png
+image: rsz_120150613_102600.jpg
 published: true
 ---
 
