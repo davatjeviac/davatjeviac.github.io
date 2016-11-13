@@ -1,7 +1,6 @@
 ---
 title: Marek Virág
 description: Starosta obce Markušovce (podpredseda Správnej rady)
-image: rsz_marek_virag.jpg
+image: marek-virag.jpg
 published: true
 ---
-

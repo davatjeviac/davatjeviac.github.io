@@ -1,7 +1,7 @@
 ---
 title: Pavlína Dunčková 
 description: Učiteľka, ZŠ Markušovce (predsedníčka Správnej rady)
-image: rsz_120150613_102600.jpg
+image: pavlina-dunckova.jpg
 published: true
 ---
 "Každý deň sa stretávam so žiakmi, ktorí sa vedia s druhými podeliť o jedlo, pero či ceruzku, lebo ich zabudli, stratili alebo polámali. Vedia, čo je nemať. Samozrejme nájdu sa aj takí, ktorí svojimi rovesníkmi v núdzi opovrhujú a vysmievajú sa im.
