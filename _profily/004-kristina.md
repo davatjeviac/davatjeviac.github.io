@@ -1,5 +1,5 @@
 ---
-title: Kristína
+title: Kristína 
 subtitle: Kristína je študentkou druhého ročníka na gymnáziu v Spišskej Novej Vsi.  
 image: davat-je-viac-dieta.png
 published: true
