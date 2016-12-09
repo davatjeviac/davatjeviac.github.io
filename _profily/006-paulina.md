@@ -7,7 +7,7 @@ group: profile
 koho-co: Paulíny
 email: yqkxroqubg@mesytb.yq
 ---
-**Vek**: 15 rokov  
+**Vek**: 16 rokov  
 **Škola**: Hotelová akadémia SNV  
 **Môj domov**: Markušovce  
 **Moje záľuby**  byť medzi ľuďmi, rada rozprávam           
