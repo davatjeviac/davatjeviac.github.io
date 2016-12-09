@@ -2,7 +2,7 @@
 title: Andrea
 subtitle: Andrea je študentkou prvého ročníka na Hotelovej akadémii v Spišskej Novej Vsi.  
 image: davat-je-viac-dieta.png
-published: false
+published: true
 group: profile
 koho-co: Andrei
 email: yqkxroqubg@mesytb.yq
@@ -22,8 +22,8 @@ email: yqkxroqubg@mesytb.yq
 
 ### Zodpovedný koordinátor
 
-RNDr. Helena Škerlíková  
-Gymnázium SNV  
-Školská 7, 052 01 Spišská Nová Ves  
-053/4422259  
-Kontakt: <yqkxroqubg@mesytb.yq>  
+Mgr. Pavlína Dunčková 
+ZŠ Markušovce
+Školská 16, 053 21 Markušovce   
+053 4498 118 
+Kontakt: <vgbrotgjatiqu@msgor.ius>
