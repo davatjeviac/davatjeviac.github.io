@@ -22,8 +22,8 @@ email: yqkxroqubg@mesytb.yq
 
 ### Zodpovedný koordinátor
 
-Mgr. Pavlína Dunčková 
-ZŠ Markušovce
-Školská 16, 053 21 Markušovce   
-053 4498 118 
+Mgr. Pavlína Dunčková        
+ZŠ Markušovce        
+Školská 16, 053 21 Markušovce          
+053 4498 118          
 Kontakt: <vgbrotgjatiqu@msgor.ius>
