@@ -25,4 +25,4 @@ Mgr. Pavlína Dunčková
 ZŠ Markušovce           
 Školská 16, 053 21 Markušovce            
 053 4498 118        
-Kontakt: <vgbrotgjatiqu@msgor.ius>
+Kontakt: <vgbrotgjatiqu@msgor.ius>    
