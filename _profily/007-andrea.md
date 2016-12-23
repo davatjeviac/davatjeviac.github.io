@@ -12,7 +12,7 @@ email: yqkxroqubg@mesytb.yq
 **Môj domov**: Markušovce          
 **Moje záľuby**:  rada sa učím, mám  rada prírodu, rada upratujem, a rada sa usmievam           
 **Čím chcem byť**: čašníčkou           
-**Prečo sa uchádzam o podporu**: Pred 9-rokmi sa našej rodine zrútil svet. s mladšou sestrou sme prišli o otca. Otec zomrel pri ťažkej autonehode, keď sa vracal z práce. Mama si našla v meste prácu, aj ked len na tri mesiace. Dostáva minimálnu mzdu.          
+**Prečo sa uchádzam o podporu**: Pred 9-rokmi sa našej rodine zrútil svet. S mladšou sestrou sme prišli o otca. Otec zomrel pri ťažkej autonehode, keď sa vracal z práce. Mama si našla v meste prácu, aj ked len na tri mesiace. Dostáva minimálnu mzdu.          
 **Odkaz pre môjho darcu**: chcem niečo v mojom živote dokázať, chcem študovať, získať skúsenosti a pracovať s ľuďmi
 
 
