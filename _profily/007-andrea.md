@@ -1,7 +1,7 @@
 ---
 title: Andrea
 subtitle: Andrea je študentkou prvého ročníka na Hotelovej akadémii v Spišskej Novej Vsi.  
-image: andrea_2.jpg 
+image: aandrea.jpg 
 published: true
 group: profile
 koho-co: Andrei
