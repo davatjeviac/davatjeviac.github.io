@@ -1,7 +1,7 @@
 ---
 title: Paulína
 subtitle: Paulína je študentkou prvého ročníka na Hotelovej akadémii v Spišskej Novej Vsi.  
-image: davat-je-viac-dieta.png
+image: paula.jpg
 published: true
 group: profile
 koho-co: Paulíny
