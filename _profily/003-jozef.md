@@ -19,11 +19,4 @@ email: yqkxroqubg@mesytb.yq
 
 **Na aký účel**: príspevok do Rodičovskej rady 15 EUR, učebnica a pracovný zošit pre druhý cudzí jazyk 13 EUR,
 vstupné na kultúrne programy v rámci vyučovania 10 EUR, školské potreby 20 EUR, 2 prihlášky na vysokú školu 70 EUR, cestovné 10 EUR/mesiac, stravné 20 EUR/mesiac, maturita 15 EUR
-
-### Zodpovedný koordinátor
-
-RNDr. Helena Škerlíková  
-Gymnázium SNV  
-Školská 7, 052 01 Spišská Nová Ves  
-053/4422259  
-Kontakt: <yqkxroqubg@mesytb.yq>  
+ 
