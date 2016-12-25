@@ -5,7 +5,7 @@ image: davat-je-viac-dieta.png
 published: true                   
 group: profile
 koho-co: Kristíny
-email: yqkxroqubg@mesytb.yq
+email: yuyk.rktmbgxyqg@msgor.ius
 ---
 **Vek**: 17 rokov                           
 **Škola**: Stredná odborná škola ekonomická v SNV                        
@@ -26,4 +26,4 @@ Ing. Ľudmila Lengvarská
 SOŠ Ekonomická Spišská Nová Ves                                 
 Stojan 1, 052 01 Spišská Nová Ves                                         
 Tel: 053/4421757                                    
-Kontakt: <yuyk.rktmbgxyqg@msgor.ius>       
+Kontakt: <yuyk.rktmbgxyqg@msgor.ius>      
