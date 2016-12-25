@@ -20,7 +20,7 @@ email: yuyk.rktmbgxyqg@msgor.ius
 **Na aký účel**: plavecký výcvik 20 EUR, príspevok do Rodičovskej rady 15 EUR, učebnica a pracovný zošit na AJ 32 EUR,
 vstupné na kultúrne programy v rámci vyučovania 10 EUR, školské potreby 20 EUR, cestovné 240 EUR na rok
 
-### Zodpovedný koordinátor
+### Zodpovedný koordinátor 
 
 Ing. Ľudmila Lengvarská                           
 SOŠ Ekonomická Spišská Nová Ves                                 
