@@ -22,8 +22,8 @@ vstupné na kultúrne programy v rámci vyučovania 10 EUR, školské potreby 20
 
 ### Zodpovedný koordinátor
 
-Ing. Ľudmila Lengvarská
-SOŠ Ekonomická 
-Stojan 1, 052 01 Spišská Nová Ves  
-053/4421757  
+Ing. Ľudmila Lengvarská                           
+SOŠ Ekonomická Spišská Nová Ves                                 
+Stojan 1, 052 01 Spišská Nová Ves                                         
+Tel: 053/4421757                                    
 Kontakt: <fbfr.yratinefxn@tznvy.pbz>
