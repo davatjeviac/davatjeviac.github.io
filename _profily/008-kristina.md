@@ -1,19 +1,19 @@
 ---
-title: Kristína 
-subtitle: Kristína je študentkou druhého ročníka na SOŠ v Spišskej Novej Vsi  
+title: Kristína                   
+subtitle: Kristína je študentkou druhého ročníka na SOŠ v Spišskej Novej Vsi                 
 image: davat-je-viac-dieta.png
-published: true
+published: true                   
 group: profile
 koho-co: Kristíny
 email: yqkxroqubg@mesytb.yq
 ---
-**Vek**: 17 rokov  
-**Škola**: Stredná odborná škola ekonomická v SNV 
-**Môj domov**: bývam v Rudňanoch 
-**Moje záľuby**: cestovanie, zvieratá, knihy
-**Čím chcem byť**: chcela by som ísť na vysokú školu a stať sa ekonómkou 
-**Prečo sa uchádzam o podporu**: Mám štyroch súrodencov. Mamka pracuje za minimálnu mzdu a otec nemá stále zamestnanie, preto majú problém pokryť náklady na naše štúdium.   
-**Odkaz pre môjho darcu**: Budem vďačná za Vašu pomoc. 
+**Vek**: 17 rokov                           
+**Škola**: Stredná odborná škola ekonomická v SNV                        
+**Môj domov**: bývam v Rudňanoch                         
+**Moje záľuby**: cestovanie, zvieratá, knihy                           
+**Čím chcem byť**: chcela by som ísť na vysokú školu a stať sa ekonómkou                    
+**Prečo sa uchádzam o podporu**: Mám štyroch súrodencov. Mamka pracuje za minimálnu mzdu a otec nemá stále zamestnanie, preto majú problém pokryť náklady na naše štúdium.                                
+**Odkaz pre môjho darcu**: Budem vďačná za Vašu pomoc.                       
 
 **Suma, ktorú potrebujem: 337 EUR** 
 
