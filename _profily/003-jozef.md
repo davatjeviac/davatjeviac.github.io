@@ -7,7 +7,7 @@ group: profile
 koho-co: Jozefa
 email: yqkxroqubg@mesytb.yq
 ---
-**Vek**: 17 rokov  
+<style="color:grey">**Vek**: 17 rokov  
 **Škola**: Gymnázium SNV        
 **Môj domov**: bývam v Smižanoch  
 **Moje záľuby**: programovanie  
