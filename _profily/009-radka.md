@@ -12,7 +12,7 @@ email: yuyk.rktmbgxyqg@msgor.ius
 **Môj domov**: bývam v Spišskej Novej Vsi                         
 **Moje záľuby**: čítanie kníh, tanec, turistika                          
 **Čím chcem byť**: marketingová manažérka a neskôr si založiť vlastnú firmu                  
-**Prečo sa uchádzam o podporu**: Pretože finančná situácia vnašej rodine je veľmi zlá. Bývam s bratom a rodičmi v sociálnom byte, mamka a otec sú nezamestnaní a hoci si popri škole privyrábam, nestačí mi to na pokrytie všetkých finančných výdajov.                                 
+**Prečo sa uchádzam o podporu**: Pretože finančná situácia v našej rodine je veľmi zlá. Bývam s bratom a rodičmi v sociálnom byte, mamka a otec sú nezamestnaní a hoci si popri škole privyrábam, nestačí mi to na pokrytie všetkých finančných výdajov.                                 
 **Odkaz pre môjho darcu**: Veľmi rada sa učím, chcem v živote niečo dosiahnuť a byť na seba hrdá. Chcem sa dostať na vysokú školu a vybudovať si kariéru. Budem veľmi rada, keď mi pomôžete. Aj vďaka Vám sa mi môžu splniť všetky moje sny.                       
 
 **Suma, ktorú potrebujem: 145 EUR** 
