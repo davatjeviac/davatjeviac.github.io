@@ -2,7 +2,7 @@
 title: Ďakujeme! Slávka už má darcu. 
 subtitle: Slávka je študentkou tretieho ročníka na gymnáziu v Spišskej Novej Vsi.  
 image: davat-je-viac-dieta.png
-published: true
+published: false
 group: profile
 koho-co: Slávky
 email: yqkxroqubg@mesytb.yq
