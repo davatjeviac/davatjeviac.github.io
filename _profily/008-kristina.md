@@ -26,4 +26,4 @@ Ing. Ľudmila Lengvarská
 SOŠ Ekonomická Spišská Nová Ves                                 
 Stojan 1, 052 01 Spišská Nová Ves                                         
 Tel: 053/4421757                                    
-Kontakt: <yuyk.rktmbgxyqg@msgor.ius>              
+Kontakt: <mimy.fyhapulmeu@agucf.wig>                         
