@@ -19,6 +19,7 @@ email: yuyk.rktmbgxyqg@msgor.ius
 
 **Na aký účel**: prihláška na VŠ 70 EUR, príspevok do Rodičovskej rady 15 EUR, učebnica na koverzáciu v cudzom jazyku 15 EUR,
 vstupné na kultúrne programy v rámci vyučovania 10 EUR, školské potreby 20 EUR, výdavky na ŮFIČ MS 15 EUR
+
 ### Zodpovedný koordinátor
 
 Ing. Ľudmila Lengvarská                           
