@@ -6,8 +6,9 @@ published: true
 group: profile-helped
 koho-co: Andrei
 email: yqkxroqubg@mesytb.yq
-lang: sk
+lang: de
 ---
+Deutsch
 **Vek**: 17 rokov  
 **Škola**: Hotelová akadémia SNV  
 **Môj domov**: Markušovce  

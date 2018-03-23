@@ -4,7 +4,7 @@ subtitle: Profily žiakov a študentov ktorým sme už pomohli.
 description: Profily žiakov a študentov ktorým sme už pomohli.
 permalink: /de/wem/
 layout: default
-published: true
+published: false
 group: profiles-helped
 lang: de
 language: Deutsch
@@ -25,12 +25,14 @@ order: 5
   </div>
 </main>
 
+<div class="strip"></div>
+
 <div class="bg-200">
   <div class="container pb-5">
 
     <div class="row pt-5">
       <div class="col-lg-8">
-        <p class="alert alert-info" role="alert">V školskom roku 2016/2017 sa nám podarilo podporiť týchto žiakov:</p>
+        <h3>V školskom roku 2016/2017 sa nám podarilo podporiť týchto žiakov:</h3>
       </div>
     </div>
 
@@ -40,7 +42,7 @@ order: 5
     {% assign item_id = i.id | handleize | replace:'/profily/', '' %}
     <div class="row profile custom-section pt-5">
       <div class="col-md-3">
-        <img alt="{{ i.title }}" class="rounded-circle" src="{{ site.baseurl }}/img/{{ i.image }}" />
+        <img alt="{{ i.title }}" class="rounded-circle mw-100" src="{{ site.baseurl }}/img/{{ i.image }}" />
       </div>
       <div class="col-md-6">
         <h2>{{ i.title }}</h2>

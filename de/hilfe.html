@@ -4,7 +4,7 @@ subtitle: Profily žiakov a študentov v hmotnej núdzi.
 description: Profily žiakov a študentov v hmotnej núdzi.
 permalink: /de/hilfe/
 layout: default
-published: true
+published: false
 group: profiles
 lang: de
 language: Deutsch
@@ -25,14 +25,16 @@ order: 4
   </div>
 </main>
 
+<div class="strip"></div>
+
 <div class="bg-200">
   <div class="container pb-5">
 
     <div class="row pt-5">
-      <div class="col-lg-6">
-        <p class="alert alert-info" role="alert">V školskom roku 2016/2017 sa nám podarilo podporiť týchto žiakov: Paula (293€), Andrea (293€), Kristína (300€), Slávka (364€) a Jozef (443€). 
+      <div class="col-lg-9">
+        <h3>V školskom roku 2016/2017 sa nám podarilo podporiť týchto žiakov: Paula (293€), Andrea (293€), Kristína (300€), Slávka (364€) a Jozef (443€). 
         Ďakujeme.  
-          Vašu pomoc ešte potrebujú:</p>
+          Vašu pomoc ešte potrebujú:</h3>
       </div>
     </div>
 
@@ -42,9 +44,9 @@ order: 4
     {% assign item_id = i.id | handleize | replace:'/profily/', '' %}
     <div class="row profile custom-section pt-5">
       <div class="col-md-3">
-        <img alt="{{ i.title }}" class="rounded-circle" src="{{ site.baseurl }}/img/{{ i.image }}" />
+        <img alt="{{ i.title }}" class="rounded-circle mw-100" src="{{ site.baseurl }}/img/{{ i.image }}" />
       </div>
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <h2>{{ i.title }}</h2>
         <p class="lead">{{ i.subtitle }}</p>
         <br>
@@ -53,12 +55,12 @@ order: 4
           {{ i.content | markdownify }}
           <div class="well">
             <form method="POST" class="cf" data-email="{{ i.email }}">
-              <div class="row">
-                <div class="col-md-6">
+              <div class="row mt-3">
+                <div class="col-lg-6">
                   <label for="inputName{{ j }}">Meno a priezvisko</label>
                   <input type="text" class="form-control" name="name" id="inputName{{ j }}" placeholder="Vaše meno">
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                   <label for="inputEmail{{ j }}">Emailová adresa</label>
                   <input type="email" class="form-control" name="_replyto" id="inputEmail{{ j }}" placeholder="Váš email">
                   <input type="hidden" name="_format" value="plain" />
@@ -67,15 +69,15 @@ order: 4
                   <input type="hidden" name="_subject" value="{{ item_id }}" />
                 </div>
               </div>
-              <div class="row">
+              <div class="row mt-3">
                 <div class="col-md-12">
                   <label for="inputMessage{{ j }}">Správa</label>
                   <textarea name="message" class="form-control" id="inputMessage{{ j }}" rows="3">Prostredníctvom vášho Občianskeho združenia by som rád/rada podporil(a) {{ i.koho-co }}.</textarea>
                 </div>
               </div>
-              <div class="row">
+              <div class="row mt-3">
                 <div class="col-md-12">
-                  <input type="submit" class="btn btn-primary" value="Odoslať">
+                  <input type="submit" class="btn btn-primary" value="Senden">
                 </div>
               </div>
             </form>
