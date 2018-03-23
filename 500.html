@@ -1,12 +1,33 @@
 ---
-layout: error
-title: Chyba servera
+title: 500
+subtitle: Chyba servera
 permalink: /500.html
-itemtype: error
+layout: error
+published: true
 group: error
+lang: sk
+language: Slovensky
+og-locale: sk_SK
 ---
-<h1>500</h1>
-<p><strong>{{ page.title }}</strong></p>
-<p>Vyzerá to, že sa niečo pokazilo!<br>
-Skúste prosím stránku načítať znova.
-</p>
+<div class="container">
+
+  <div class="row pt-5">
+    <div class="col-12 col-md-9 offset-md-3">
+      <h1 class="mb-05">{{ page.title }}</h1>
+      {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
+    </div>
+  </div>
+
+  <div class="row pb-3">
+    <div class="col-12 col-md-9 offset-md-3">
+      <p>Vyzerá to, že sa niečo pokazilo!<br>Skúste prosím stránku načítať znova.</p>
+    </div>
+  </div>
+
+  <div class="row pb-5">
+    <div class="col-12 col-md-9 offset-md-3">
+      <a href="{{ site.url }}{{ site.baseurl }}">Prejdite na hlavnú stránku →</a>
+    </div>
+  </div>
+
+</div>

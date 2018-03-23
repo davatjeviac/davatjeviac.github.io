@@ -1,42 +1,73 @@
+<!-- Get values from main index.html file -->
+{% assign ind = (site.pages | sort: "order" | where: "group" , "index" | where: "lang" , page.lang) %}
+{% assign index_title = ind[0].title %}
+{% assign index_subtitle = ind[0].subtitle %}
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  {% if site.title %}
-  <title>{% if page.group == "index" %}{{ site.title }} · {{ site.subtitle }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+
+<!-- Title -->
+{% if index_title %}
+<title>{% if page.group == "index" %}{{ index_title }} - {{ index_subtitle }}{% else %}{{ page.title }} - {{ index_title }}{% endif %}</title>
+{% else %}
+<title>{% if page.group == "index" %}{{ site.title }} - {{ site.subtitle }}{% else %}{{ page.title }} - {{ site.title }}{% endif %}</title>
+{% endif %}
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Description -->
+{% if page.description %}
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ page.description }}{% endif %}">
+{% endif %}
+
+<!-- Open Graph -->
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}"/>
+{% endif %}
+{% if site.title %}
+<meta property="og:site_name" content="{{ site.title }}"/>
+{% endif %}
+{% if page.description %}
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ page.description }}{% endif %}"/>
+{% endif %}
+<meta property="og:type" content="website"/>
+{% if page.url %}
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+{% endif %}
+{% if page.og-image %}
+<meta property="og:image" content="{{ site.url }}/img/{{ page.og-image }}"/>
+{% endif %}
+{% if page.og-locale %}
+<meta property="og:locale" content="{{ page.og-locale }}"/>
+{% endif %}
+
+<!-- Author -->
+{% if site.author %}
+<meta name="author" content="{{ site.author }}" />
+{% endif %}
+<link rel="author" href="{{ "/humans.txt" | prepend: site.baseurl | prepend: site.url }}" />
+
+<!-- Icons -->
+{% include favicon-custom.html %}
+
+<!-- Canonical -->
+{% if site.url and page.url and page.lang %}
+<link rel="canonical" hreflang="{{ page.lang }}" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+{% endif %}
+
+<!-- Alternate -->
+{% assign pages = (site.pages | where: "order", page.order | where: "published", "true") %}
+{% for p in pages %}
+  {% comment %} Detect current page by language {% endcomment %}
+  {% if page.lang == p.lang %}
+    <link rel="alternate" hreflang="x-default" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% else %}
+    <link rel="alternate" hreflang="{{ p.lang }}" href="{{ p.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" title="{{ p.language }}">
   {% endif %}
-  {% if page.description %}
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ page.description }}{% endif %}">
-  {% endif %}
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | prepend: site.baseurl }}" sizes="32x32">
-  <link rel="icon" type="image/png" href="{{ "/favicon-16x16.png" | prepend: site.baseurl }}" sizes="16x16">
-  <link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl }}">
-  <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | prepend: site.baseurl }}">
-  <link rel="shortcut icon" type="image/ico" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
-  <link rel="icon" href="{{ "/icon.svg" | prepend: site.baseurl }}" sizes="any" type="image/svg+xml">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  {% comment %} Include critical Above-the-Fold CSS {% endcomment %}
-  {% capture critical %}
-  {% include critical.css %}
-  {% endcapture %}
-  <style>
-    {{ critical }}
-  </style>
-  {% comment %}
-  Load CSS asynchronously.
-  {% endcomment %}
-  <link rel="preload" href="{{ "/css/" | append: site.css-file | prepend: site.baseurl }}" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ "/css/" | append: site.css-file | prepend: site.baseurl }}"></noscript>
-  <script>
-    /*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
-    (function(n){"use strict";var t=function(t,i,r){function l(n){if(f.body)return n();setTimeout(function(){l(n)})}function c(){u.addEventListener&&u.removeEventListener("load",c),u.media=r||"all"}var f=n.document,u=f.createElement("link"),e,s,h,o;return i?e=i:(s=(f.body||f.getElementsByTagName("head")[0]).childNodes,e=s[s.length-1]),h=f.styleSheets,u.rel="stylesheet",u.href=t,u.media="only x",l(function(){e.parentNode.insertBefore(u,i?e:e.nextSibling)}),o=function(n){for(var i=u.href,t=h.length;t--;)if(h[t].href===i)return n();setTimeout(function(){o(n)})},u.addEventListener&&u.addEventListener("load",c),u.onloadcssdefined=o,o(c),u};typeof exports!="undefined"?exports.loadCSS=t:n.loadCSS=t})(typeof global!="undefined"?global:this);
-    /*! CSS rel=preload polyfill. Depends on loadCSS function. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT  */
-    (function(n){var t,i;n.loadCSS&&(t=loadCSS.relpreload={},t.support=function(){try{return n.document.createElement("link").relList.supports("preload")}catch(t){return!1}},t.poly=function(){for(var r=n.document.getElementsByTagName("link"),t,i=0;i<r.length;i++)t=r[i],t.rel==="preload"&&t.getAttribute("as")==="style"&&(n.loadCSS(t.href,t),t.rel=null)},t.support()||(t.poly(),i=n.setInterval(t.poly,300),n.addEventListener&&n.addEventListener("load",function(){n.clearInterval(i)}),n.attachEvent&&n.attachEvent("onload",function(){n.clearInterval(i)})))})(this);
-  </script>
-  <script></script><!-- here to ensure a non-blocking load still occurs in IE and Edge, even if scripts follow loadCSS in head -->
-  {% if site.google_analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
+{% endfor %}
+
+<!-- Styles -->
+<link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
+
 </head>

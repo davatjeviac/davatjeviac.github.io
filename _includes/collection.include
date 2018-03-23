@@ -6,22 +6,26 @@
 *   If you set »published: false« in front matter of a collection page 
 *   the page gots filtered out via unless
 *
-*   Example: {% include list-collection.include collection='wordpress' %}
+*   Example: {% include xxlist-collection.include collection='wordpress' %}
 *
 *   Source: https://talk.jekyllrb.com/t/loop-pages-from-a-collection/332/2
 *
 {% endcomment %}
 {% for i in site.[include.collection] %}
-{% unless i.published == false %}
-<div class="row">
-  <div class="col-md-9">
+
+{% if i.title and i.lang == page.lang and i.published != false %}
+
+<div class="row py-4">
+  <div class="col-md-6">
     <div class="custom-section">
-      <img alt="{{ i.title }}" class="img-circle" src="{{ site.baseurl }}/img/{{ i.image }}" />
+      <img alt="{{ i.title }}" class="rounded-circle pb-2" src="{{ site.baseurl }}/img/{{ i.image }}"/>
       <h2>{{ i.title }}</h2>
       <p class="lead">{{ i.description }}</p>
       <p>{{ i.content | markdownify }}</p>
     </div>
   </div>
 </div>
-{% endunless %}
+
+{% endif %}
+
 {% endfor %}

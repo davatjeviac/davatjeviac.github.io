@@ -1,0 +1,62 @@
+---
+title: Komu sme pomohli
+subtitle: Profily žiakov a študentov ktorým sme už pomohli.
+description: Profily žiakov a študentov ktorým sme už pomohli.
+permalink: /komu-sme-pomohli/
+layout: default
+published: true
+group: profiles-helped
+lang: sk
+language: Slovensky
+og-locale: sk_SK
+og-image: davat-je-viac-ilustracia-siroka.png
+order: 5
+---
+<main class="bd-masthead py-5" role="main">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-3">{{ page.title }}</h1>
+        <p class="lead">{{ page.subtitle }}</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<div class="strip"></div>
+
+<div class="bg-200">
+  <div class="container pb-5">
+
+    <div class="row pt-5">
+      <div class="col-lg-8">
+        <h3>V školskom roku 2016/2017 sa nám podarilo podporiť týchto žiakov:</h3>
+      </div>
+    </div>
+
+    {% assign j = 0 %}
+    {% for i in site.profily %}
+    {% if i.title and i.lang == page.lang and i.published != false and i.group == "profile-helped" %}
+    {% assign item_id = i.id | handleize | replace:'/profily/', '' %}
+    <div class="row profile custom-section pt-5">
+      <div class="col-md-3">
+        <img alt="{{ i.title }}" class="rounded-circle mw-100" src="{{ site.baseurl }}/img/{{ i.image }}" />
+      </div>
+      <div class="col-md-6">
+        <h2>{{ i.title }}</h2>
+        <p class="lead">{{ i.subtitle }}</p>
+        <br>
+        <!-- Form -->
+        <div>
+          {{ i.content | markdownify }}
+        </div>
+      </div>
+    </div>
+    {% assign j = j | plus: 1 %}
+    {% endif %}
+    {% endfor %}
+
+  </div>
+</div>

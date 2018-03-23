@@ -4,23 +4,40 @@ description: Pomáhame žiakom a študentom v hmotnej núdzi. Chcete vedieť via
 subtitle: Chcete vedieť viac? Kontaktujte nás.
 permalink: /kontakt/
 layout: default
-itemtype: contact
-group: subpage
-order: 5
+published: true
+group: contact
+lang: sk
+language: Slovensky
+og-locale: sk_SK
+og-image: davat-je-viac-ilustracia-siroka.png
+order: 7
 ---
-<div tabindex="-1" class="custom-header">
+<main class="bd-masthead py-5" role="main">
   <div class="container">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.subtitle }}</p>
+
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-3">{{ page.title }}</h1>
+        <p class="lead">{{ page.subtitle }}</p>
+      </div>
+    </div>
+
   </div>
-</div>
-<div class="container custom-container">
-  <div class="row">
-    <div class="col-md-9">
-      <div class="custom-section">
+</main>
+
+<div class="strip"></div>
+
+<div class="bg-200">
+  <div class="container pb-5">
+
+    <div class="row pt-5">
+      <div class="col-lg-6">
         <p>Ste učiteľ na základnej alebo strednej škole a chcete sa stať našim koordinátorom? Alebo jednoducho chcete vedieť viac? Kontaktujte nás.</p>
       </div>
-      <div class="custom-section">
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-md-9">
         <form class="cf" method="POST" data-email="{{ site.email }}">
           <div class="form-group">
             <label for="inputName1">Meno a priezvisko</label>
@@ -37,9 +54,10 @@ order: 5
             <label for="inputMessage1">Správa</label>
             <textarea name="message" class="form-control" id="inputMessage1"></textarea>
           </div>
-          <input type="submit" class="btn btn-default" value="Odoslať">
+          <input type="submit" class="btn btn-primary" value="Odoslať">
         </form>
       </div>
     </div>
+
   </div>
 </div>

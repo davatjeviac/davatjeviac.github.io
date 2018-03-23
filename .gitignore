@@ -1,8 +1,7 @@
 _site
+_src
 .sass-cache
-node_modules
+.jekyll-metadata
 Thumbs.db
 .DS_Store
 !.gitkeep
-jekyll-serve.app
-all.html

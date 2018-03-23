@@ -1,29 +1,66 @@
-<header id="top" class="navbar navbar-static-top">
-  <div class="container">
-    <div class="navbar-header">
-      {% if site.title and site.url %}
-      {% comment %} Always show active logo {% endcomment %}
-      <a class="navbar-brand" href="{{ site.url | replace:"index.html","" | prepend: site.baseurl }}">{{ site.title }}</a>
-      {% endif %}
-    </div>
-    <nav class="snv">
-      <a href="#" class="mic">
-        <svg viewbox="0 0 18 15" width="36" height="34"><path fill="#424242" d="M18 1.5c0 0.8-0.7 1.5-1.5 1.5H1.5C0.7 3 0 2.3 0 1.5l0 0C0 0.7 0.7 0 1.5 0h15C17.3 0 18 0.7 18 1.5L18 1.5zM18 7.5C18 8.3 17.3 9 16.5 9H1.5C0.7 9 0 8.3 0 7.5l0 0c0-0.8 0.7-1.5 1.5-1.5h15C17.3 6 18 6.7 18 7.5L18 7.5zM18 13.5C18 14.3 17.3 15 16.5 15H1.5C0.7 15 0 14.3 0 13.5l0 0c0-0.8 0.7-1.5 1.5-1.5h15C17.3 12 18 12.7 18 13.5L18 13.5z"/></svg>
-      </a>
-      <div class="trigger">
-      {% assign pages = site.pages | sort: "order" | where: "group" , "subpage" %}
-      {% for i in pages %}
-        {% unless i.published == false %}
-          {% if i.sitemap.exclude != "yes" %}
-              {% if page.url == i.url %}
-                <a class="pgl active" href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
-              {% else %}
-                <a class="pgl" href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
-              {% endif %}
+<!-- Get values from main index.html file -->
+{% assign ind = (site.pages | sort: "order" | where: "group" , "index" | where: "lang" , page.lang) %}
+{% assign index_title = ind[0].title %}
+{% assign index_subtitle = ind[0].subtitle %}
+{% assign index_url = ind[0].url %}
+
+
+<!-- Colors: blue, indigo, purple, pink, red, orange, yellow, green, teal, cyan, white -->
+<header class="bg-white">
+
+  <div class="navbar navbar-expand navbar-light flex-column flex-lg-row bd-navbar mx-auto">
+
+    <!-- Site name -->
+    <a class="navbar-brand mr-0 mr-lg-2" href="{{ index_url | replace:"index.html","" | prepend: site.baseurl }}">{{ index_title }}</a>
+
+    <!-- Main menu -->
+    <nav class="navbar-nav ml-lg-auto d-flex flex-row" role="navigation">
+      <ul class="d-flex flex-wrap flex-lg-row justify-content-center">
+        {% assign pages = site.pages | sort: "order" %}
+        {% for p in pages %}
+          {% if p.title and p.lang == page.lang and p.published != false and (p.group == "about" or p.group == "how" or p.group == "profiles" or p.group == "profiles-helped" or p.group == "stories" or p.group == "contact") %}
+            {% comment %} Detect active page by url {% endcomment %}
+            {% if (page.url == p.url) or (page.group == p.children) %}
+              <li class="nav-item"><a class="nav-link active" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+            {% else %}
+              <li class="nav-item"><a class="nav-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+            {% endif %}
           {% endif %}
-        {% endunless %}
-      {% endfor %}
-      </div>
+        {% endfor %}
+      </ul>
     </nav>
+    <!-- End of Main menu -->
+
+    <!-- Language menu -->
+    <ul class="navbar-nav ml-lg-auto d-flex flex-row">
+    {% assign counter = 0 %}
+    {% assign pages = (site.pages | sort: "order" | where: "group" , "index" | where: "published" , "true") %}
+    {% if pages.size > 1 %}
+      {% for p in pages %}
+        {% if page.group == "index" or page.group == "error" %}
+          {% if counter == 0 %}
+            {% assign twin_url = "/" %}
+          {% else %}
+            {% capture twin_url %}/{{ p.lang }}/{% endcapture %}
+          {% endif %}
+        {% else %}
+          {% assign twin = (site.pages | sort: "order" | where: "group" , page.group | where: "order" , page.order | where: "lang" , p.lang ) %}
+          {% assign twin_url = twin[0].url %} {% endif %}
+          {% if twin_url and p.lang %}
+            {% comment %} Detect current page by language {% endcomment %}
+            {% if page.lang == p.lang %}
+              <li class="nav-item"><a class="nav-link active" href="{{ twin_url | replace:" index.html "," " | prepend: site.baseurl }}" hreflang="{{ p.lang }}" lang="{{ p.lang }}">{{ p.language }}</a></li>
+            {% else %}
+              <li class="nav-item"><a class="nav-link" href="{{ twin_url | replace:" index.html "," " | prepend: site.baseurl }}" hreflang="{{ p.lang }}" lang="{{ p.lang }}">{{ p.language }}</a></li>
+            {% endif %}
+          {% endif %}
+          {% assign counter=counter | plus:1 %}
+      {% endfor %}
+    {% endif %}
+    </ul>
+    <!-- End of Language menu -->
+
   </div>
+
 </header>
+

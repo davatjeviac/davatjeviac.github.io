@@ -4,24 +4,29 @@ layout: compress
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-type">
-    <meta content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'" http-equiv="Content-Security-Policy">
-    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+    <!-- Title -->
+    {% if page.title %}
+      <title>{{ page.title }}</title>
+    {% else %}
+      <title>{{ site.title }}</title>
+    {% endif %}
+
+    <!-- Include error.css file -->
     {% capture error %}
-    {% include error.scss %}
+    {% include error.css %}
     {% endcapture %}
-    <style>
-      {{ error | scssify }}
-    </style>
+    <style>{{ error }}</style>
+
   </head>
-  <body>
-    <div class="container">
-      {{ content }}
-      <br><br>
-      <a href="{{ site.url }}{{ site.baseurl }}">Choďte na domovskú stránku →</a><br>
-      <a class="logo" href="/">
-      <img width="32" height="32" alt="{{ site.title }}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeBJREFUeNrsV8tRwzAQlTMpICWEDtxBTAVJTlydoQDbFYAriCmAiThywiWYDkQFuAPcAezOrI1i9PUncGBndqSxPvu02n1aMzZSbp/5asz6wMPQDpoNaAgaaaZVoK+g/PEmrkcDoNOloAmo70kRTAZAxCAAYDyG5jjAcF8KAJF5AQDjJ2hiNp2gF64BSGMFMINxI4iFwu1zGGcUvCetByjg3ie4c5tgYBYqD6QXMI5yJ3OHDCBhl5E2tb8BEMnYTo/BcyAVmiDb03hj2Svpe2DjgHwPd4cMx8mQarw0jJ95gQ7dAQht1mHjSurXxHQd68nUK881yNYLgOYuVX2ftOwAWDcAl6VSP+qBDunbj7k2AAEt+HREzSnAYgXohsZXrmQGVxUsPd0Wu6aXqyzYL8s/gKVUvUSOVQ6TmDCU2iEVUwdAGACUoA82coFMWtMeyKou1C7kNMQFL7pUURgLaUxYeONoAIDFSSXXAx8a1Dnl+NbgJUGKFXHZVj0GfqlhzlW/ILnHt3qi2CrpMJHhYSv7WVA4PKOusjMY563xMwDktsPMWYfXlGl5gJDlMxnnqqo4GBjBvvme69LY9GcUEYghtUJbsDzZ+MP6c0oc0abgWnNCdOtbm46uP6Z/Qr4EGABKna04kpgvmAAAAABJRU5ErkJggg=="/>
-      </a>
-    </div>
+  <body class="error">
+    {{ content | strip }}
   </body>
 </html>
