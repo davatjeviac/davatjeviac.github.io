@@ -11,10 +11,18 @@
   <div class="navbar navbar-expand navbar-light flex-column flex-lg-row bd-navbar mx-auto">
 
     <!-- Site name -->
-    <a class="navbar-brand mr-0 mr-lg-2" href="{{ index_url | replace:"index.html","" | prepend: site.baseurl }}">{{ index_title }}</a>
+    <div class="navbar-nav d-flex flex-row">
+      <!-- Detect active page by url -->
+        {% if (page.group == "index") %}
+          <a class="navbar-brand mr-0 mr-lg-2 active" href="{{ index_url | replace:"index.html","" | prepend: site.baseurl }}">{{ index_title }}</a>
+        {% else %}
+          <a class="mr-0 mr-lg-2" href="{{ index_url | replace:"index.html","" | prepend: site.baseurl }}">{{ index_title }}</a>
+        {% endif %}
+    </div>
+    <!-- End of Site name -->
 
     <!-- Main menu -->
-    <nav class="navbar-nav ml-lg-auto d-flex flex-row" role="navigation">
+    <nav class="navbar-nav ml-lg-auto d-flex flex-row my-2 my-lg-0" role="navigation">
       <ul class="d-flex flex-wrap flex-lg-row justify-content-center">
         {% assign pages = site.pages | sort: "order" %}
         {% for p in pages %}
