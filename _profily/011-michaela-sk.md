@@ -3,7 +3,7 @@ title: Michaela
 subtitle: Michela je študentkou gymnázia v Spišskej Novej Vsi
 image:  davat-je-viac-ziak.png
 published: true
-group: profile
+group: profile-helped
 koho-co: Michaely
 email: lotzubg@mesytb.yq
 lang: sk
