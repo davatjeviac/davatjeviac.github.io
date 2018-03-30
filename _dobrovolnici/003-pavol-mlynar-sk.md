@@ -1,6 +1,6 @@
 ---
 title: Pavol Mlynár
-description: Futbalový tréner (člen Správnej rady)
+description: Futbalový tréner, Trenčín (člen Správnej rady)
 image: pavol-mlynar.jpg
 published: true
 lang: sk
