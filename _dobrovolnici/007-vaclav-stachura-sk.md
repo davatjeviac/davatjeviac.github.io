@@ -1,6 +1,6 @@
 ---
 title: Václav Stachura
-description: Ekonóm (člen Dozornej rady)
+description: Ekonóm, Miloslavov (člen Dozornej rady)
 image: vaclav-stachura.jpg
 published: true
 lang: sk
