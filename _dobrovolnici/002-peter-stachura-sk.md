@@ -1,6 +1,6 @@
 ---
 title: Peter Stachura
-description: Lekár, Klinikum Bayreuth, Nemecko (podpredseda Správnej rady)
+description: Lekár, Sankt Pölten, Rakúsko (podpredseda Správnej rady)
 image: peter-stachura.jpg
 published: true
 lang: sk
