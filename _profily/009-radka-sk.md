@@ -2,7 +2,7 @@
 title: Radka
 subtitle: Radka je študentkou štvrtého ročníka na SOŠ v Spišskej Novej Vsi
 image: davat-je-viac-ziak.png
-published: true
+published: false
 group: profile-helped
 koho-co: Radky
 email: yuyk.rktmbgxyqg@msgor.ius
