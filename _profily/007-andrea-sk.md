@@ -1,6 +1,6 @@
 ---
-title: Ďakujeme! Andrea už má darcu.
-subtitle: Andrea je študentkou prvého ročníka na Hotelovej akadémii v Spišskej Novej Vsi.
+title: Ďakujeme!
+subtitle: Andrea
 image: 007-andrea.jpg
 published: true
 group: profile-helped
@@ -10,15 +10,9 @@ lang: sk
 ---
 **Vek**: 17 rokov  
 **Škola**: Hotelová akadémia SNV  
-**Môj domov**: Markušovce  
-**Moje záľuby**:  rada sa učím, mám  rada prírodu, rada upratujem, a rada sa usmievam  
-**Čím chcem byť**: čašníčkou  
-**Prečo sa uchádzam o podporu**: Pred 9-rokmi sa našej rodine zrútil svet. S mladšou sestrou sme prišli o otca. Otec zomrel pri ťažkej autonehode, keď sa vracal z práce. Mama si našla v meste prácu, aj ked len na tri mesiace. Dostáva minimálnu mzdu.  
-**Odkaz pre môjho darcu**: chcem niečo v mojom živote dokázať, chcem študovať, získať skúsenosti a pracovať s ľuďmi.  
+**Prečo som sa uchádzala o podporu**: Pred 9-rokmi sa našej rodine zrútil svet. S mladšou sestrou sme prišli o otca. Otec zomrel pri ťažkej autonehode, keď sa vracal z práce. Mama si našla v meste prácu, aj ked len na tri mesiace. Dostáva minimálnu mzdu.  
 
-**Suma, ktorú som dostal: 293 EUR**  
-
-**Na aký účel**: oblečenie na prax 80 EUR, topánky 30 EUR, náhradná blúzka 30 EUR, úbor na telesnú výchovu 30 EUR, triedny fond 10 EUR, rodičovský príspevok  13 EUR, cestovné 10 EUR/mesiac.  
+**Suma, ktorú som dostala: 293 EUR**  
 
 ### Zodpovedný koordinátor
 
