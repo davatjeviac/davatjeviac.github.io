@@ -1,9 +1,9 @@
 ---
-title: Kristína
-subtitle: Kristína je študentkou druhého ročníka na SOŠ v Spišskej Novej Vsi 
+title: Ďakujeme!
+subtitle: Kristína  
 image: davat-je-viac-ziak.png
 published: true
-group: profile
+group: profile-helped
 koho-co: Kristíny
 email: yuyk.rktmbgxyqg@msgor.ius
 lang: sk
@@ -14,9 +14,9 @@ lang: sk
 **Moje záľuby**: cestovanie, zvieratá, knihy  
 **Čím chcem byť**: chcela by som ísť na vysokú školu a stať sa ekonómkou  
 **Prečo sa uchádzam o podporu**: Mám štyroch súrodencov. Mamka pracuje za minimálnu mzdu a otec nemá stále zamestnanie, preto majú problém pokryť náklady na naše štúdium.  
-**Odkaz pre môjho darcu**: Budem vďačná za Vašu pomoc.  
+**Odkaz pre môjho darcu**: 
 
-**Suma, ktorú potrebujem: 57 EUR, 280 EUR už darovali absolventi 4C triedy (školský rok 1996/1997) Gymnázia Školská 7 v Spišskej Novej Vsi**
+**280 EUR darovali absolventi 4C triedy (školský rok 1996/1997) Gymnázia Školská 7 v Spišskej Novej Vsi**
 
 **Na aký účel**: plavecký výcvik 20 EUR, príspevok do Rodičovskej rady 15 EUR, učebnica a pracovný zošit na AJ 32 EUR, vstupné na kultúrne programy v rámci vyučovania 10 EUR, školské potreby 20 EUR, cestovné 40 EUR na rok, stravné 200 EUR na rok  
 
