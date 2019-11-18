@@ -1,6 +1,6 @@
 ---
 title: Martin
-subtitle: Martin je žiakom 9 ročníka ZŠ v Markušovciach
+subtitle: Martin je žiakom I.C triedy na Gymnáziu v SNV
 image: davat-je-viac-ziak.png
 published: true
 group: profile
@@ -8,17 +8,17 @@ koho-co: Martina
 email: vgbrotgjatiqu@msgor.ius
 lang: sk
 ---
-**Vek**: 15 rokov  
-**Škola**: ZŠ Markušovce  
-**Môj domov**: Bývam s rodičmi a bratmi v Markušovciach v dome s dvoma izbami...  
-**Moje záľuby**: futbal, príroda (reprezentujem školu v biologickej olympiáde zo zoológie)  
-**Čím chcem byť**: stolárom  
-**Prečo sa uchádzam o podporu**: Rodičia nemajú prácu, rád by som pokračoval v štúdiu bez obmedzenia  
+**Vek**: 16 rokov  
+**Škola**: Gymnázium Školská 7, SNV  
+**Môj domov**: Bývam s rodičmi a bratmi v Markušovciach v malom dvojizbovom dome. 
+**Moje záľuby**: futbal, príroda, biologické súťaže  
+**Čím chcem byť**: možno lekárom  
+**Prečo sa uchádzam o podporu**: Rodičia sú bez práce, ale podporujú ma ako sa dá, aby som dosiahol lepšie vzdelanie.   
 
 
-**Suma, ktorú potrebujem: 67 EUR**  
+**Suma, ktorú potrebujem: 447 EUR**  
 
-**Na aký účel**: ZRPŠ: 3 eurá; koncerty: 4 eurá; výlety: 15 eur; telesná výchova: 35 eur; prezúvky: 10 eur  
+**Na aký účel**: EPEUS 80 euro (na celé 4 roky), ZRPŠ: 15 eúr; AJ učebnica a pracovný zošit 27 eúr, druhý cudzí jazyk učebnica a pracovný zošit 13 eúr, kultúrne podujatia 10 eúr,    
 
 ### Zodpovedný koordinátor
 
