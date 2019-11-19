@@ -22,8 +22,8 @@ lang: sk
 
 ### Zodpovedný koordinátor
 
-RNDr. Helena Škeríková 
-Gymnázium Školská 7
-05201 Spišská Nová Ves
-053 4422259
-Kontakt: skerlikova@gymsnv.sk
+RNDr. Helena Škeríková                            
+Gymnázium Školská 7                                  
+05201 Spišská Nová Ves                                    
+053 4422259                                                 
+Kontakt: skerlikova@gymsnv.sk                             
