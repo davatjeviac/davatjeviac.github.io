@@ -18,12 +18,12 @@ lang: sk
 
 **Suma, ktorú potrebujem: 447 EUR**  
 
-**Na aký účel**: EPEUS 80 euro (na celé 4 roky), ZRPŠ: 15 eúr; AJ učebnica a pracovný zošit 27 eúr, druhý cudzí jazyk učebnica a pracovný zošit 13 eúr, kultúrne podujatia 10 eúr,    
+**Na aký účel**: EPEUS 80 euro (na celé 4 roky), ZRPŠ: 15 eúr; AJ učebnica a pracovný zošit 27 eúr, druhý cudzí jazyk učebnica a pracovný zošit 13 eúr, kultúrne podujatia 10 eúr, školské pomôcky 20 eúr, ročné stravné 282 eúr
 
 ### Zodpovedný koordinátor
 
-Mgr. Pavlína Dunčková  
-ZŠ Markušovce  
-Školská 16, 053 21 Markušovce  
-053 4498 118  
-Kontakt: <vgbrotgjatiqu@msgor.ius>
+RNDr. Helena Škeríková 
+Gymnázium Školská 7
+05201 Spišská Nová Ves
+053 4422259
+Kontakt: skerlikova@gymsnv.sk
