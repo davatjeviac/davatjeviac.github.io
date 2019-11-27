@@ -1,6 +1,6 @@
 ---
 title: Filip
-subtitle: Filip je žiakom I.D triedy na Gymnáziu v SNV
+subtitle: Filip je žiakom I.D triedy na Gymnáziu v SNV 
 image: davat-je-viac-ziak.png
 published: true
 group: profile
@@ -8,12 +8,12 @@ koho-co: Filipa
 email: vgbrotgjatiqu@msgor.ius
 lang: sk
 ---
-**Vek**: 15 rokov  
-**Škola**: Gymnázium Školská 7, SNV  
-**Môj domov**: Bývam s mamkou a súrodencami v Levoči
-**Moje záľuby**: Futbal, šport všeobecne
-**Čím chcem byť**: vojenským inžinierom
-**Prečo sa uchádzam o podporu**: Žijem v dome s mamkou, ktorá sa stará o mňa, mojich dvoch bratov, z ktorých jeden študuje na strednej a druhý na vysokej škole a o oboch starých starých rodičov, ktorí pomáhajú ako sa dá. Bez nich by to mama finančne nezvládla.   
+**Vek**: 15 rokov                                    
+**Škola**: Gymnázium Školská 7, SNV                    
+**Môj domov**: Bývam s mamkou a súrodencami v Levoči                                
+**Moje záľuby**: Futbal, šport všeobecne                             
+**Čím chcem byť**: vojenským inžinierom                                 
+**Prečo sa uchádzam o podporu**: Žijem v dome s mamkou, ktorá sa stará o mňa, mojich dvoch bratov, z ktorých jeden študuje na strednej a druhý na vysokej škole a o oboch starých starých rodičov, ktorí pomáhajú ako sa dá. Bez nich by to mama finančne nezvládla.             
 
 
 **Suma, ktorú potrebujem: 647 EUR**  
