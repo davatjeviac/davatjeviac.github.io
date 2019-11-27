@@ -8,12 +8,12 @@ koho-co: Martina
 email: vgbrotgjatiqu@msgor.ius
 lang: sk
 ---
-**Vek**: 16 rokov  
-**Škola**: Gymnázium Školská 7, SNV  
-**Môj domov**: Bývam s rodičmi a bratmi v Markušovciach v malom dvojizbovom dome. 
-**Moje záľuby**: futbal, príroda, biologické súťaže  
-**Čím chcem byť**: možno lekárom  
-**Prečo sa uchádzam o podporu**: Rodičia sú bez práce, ale podporujú ma ako sa dá, aby som dosiahol lepšie vzdelanie.   
+**Vek**: 16 rokov                    
+**Škola**: Gymnázium Školská 7, SNV                       
+**Môj domov**: Bývam s rodičmi a bratmi v Markušovciach v malom dvojizbovom dome.                  
+**Moje záľuby**: futbal, príroda, biologické súťaže                    
+**Čím chcem byť**: možno lekárom                               
+**Prečo sa uchádzam o podporu**: Rodičia sú bez práce, ale podporujú ma ako sa dá, aby som dosiahol lepšie vzdelanie.                
 
 
 **Suma, ktorú potrebujem: 447 EUR**  
