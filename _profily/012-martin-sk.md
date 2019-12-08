@@ -1,5 +1,5 @@
 ---
-title: Martin
+title: Ďakujeme, Martin už má darcu!   
 subtitle: Martin je žiakom I.C triedy na Gymnáziu v SNV
 image: davat-je-viac-ziak.png
 published: true
